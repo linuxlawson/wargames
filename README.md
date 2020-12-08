@@ -1,12 +1,13 @@
-# WOPR  
+# WOPR   
 
+Interactive program  
 From 1983 Wargames movie
 
 WOPR (codename: Joshua)
 is a War Operation Plan Response super computer.
 
 Ask questions below (in order) and Joshua will respond.
-Begin after greeting.
+Begin after greeting.  
 
 
 Hello, Joshua?
