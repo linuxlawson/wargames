@@ -9,7 +9,10 @@ is a War Operation Plan Response super computer.
 Ask questions below (in order) and Joshua will respond.  
 Begin after greeting.  
   
-  
+--------------------------------------------------------  
+Questions for WOPR (aka Joshua):  
+
+<br>
   
 Hello, Joshua?
 
