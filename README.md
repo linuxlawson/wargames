@@ -10,7 +10,7 @@ Ask questions below (in order) and Joshua will respond.
 Begin after greeting.  
   
 --------------------------------------------------------  
-Questions for WOPR (aka Joshua):  
+Questions for Joshua:  
 
 <br>
   
