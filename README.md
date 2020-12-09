@@ -1,6 +1,6 @@
 # WOPR   
 
-Interactive program  
+Interactive Simulation (joshua.py)  
 From 1983 Wargames movie
 
 WOPR (codename: Joshua)
@@ -26,4 +26,6 @@ Is this a game or is it real?
 
 People sometimes make mistaks
 
-What is the primary goal?
+What is the primary goal?  
+
+--------------------------------------------------------  
