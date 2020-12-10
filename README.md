@@ -1,6 +1,6 @@
 # WOPR   
 
-Interactive Simulation (joshua.py)  
+Interactive WOPR Simulation (joshua.py)  
 From 1983 Wargames movie
 
 WOPR (codename: Joshua)
