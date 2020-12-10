@@ -5,11 +5,15 @@ import os
 os.system('clear')
 import time
 
+
+twhite = '\033[37m'
+endc = '\033[m'
+
 print
 print
 #processing delay
 import sys, time
-string = 'Greetings Professor Falken\n\n'
+string = (twhite + 'Greetings Professor Falken\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -22,7 +26,7 @@ say = raw_input('') #hello, joshua?
 print
 time.sleep (1)
 
-print "You are a hard man to reach. Could not locate you in Seattle and no terminal was in operation at your classified address."
+print (twhite + "You are a hard man to reach. Could not locate you in Seattle and no terminal was in operation at your classified address." + endc)
 time.sleep (0.5)
 print "\n"
 
@@ -30,15 +34,15 @@ say = raw_input('') #what classified address
 print
 time.sleep (1)
 
-print "DOD Pension files indicate current mailing address as:\n"
+print (twhite + "DOD Pension files indicate current mailing address as:\n" + endc)
 time.sleep (0.5)
-print " Dr. Robert Hume"
+print (twhite + " Dr. Robert Hume" + endc)
 time.sleep (0.5)
-print " 5 Tall Cedar Road"
+print (twhite + " 5 Tall Cedar Road" + endc)
 time.sleep (0.5)
-print " Goose Island"
+print (twhite + " Goose Island" + endc)
 time.sleep (0.5)
-print " Oregon 95..."
+print (twhite + " Oregon 95..." + endc)
 print "\n"
 time.sleep (0.5)
 
@@ -46,7 +50,7 @@ say = raw_input('') #are you still playing the game?
 print
 time.sleep (1)
 
-print "Of Course."
+print (twhite + "Of Course." + endc)
 print "\n"
 time.sleep (0.5)
 
@@ -54,7 +58,7 @@ say = raw_input('') #what is the primary goal?
 print
 time.sleep (1)
 
-print "You should know professor, you programmed me."
+print (twhite + "You should know professor, you programmed me." + endc)
 print "\n"
 time.sleep (0.5)
 
@@ -62,7 +66,7 @@ say = raw_input('') #is this a game or is it real?
 print
 time.sleep (1)
 
-print "Whats the difference?"
+print (twhite + "Whats the difference?" + endc)
 print "\n"
 time.sleep (0.5)
 
@@ -70,7 +74,7 @@ say = raw_input('') #people sometimes make mistaks
 print
 time.sleep (1)
 
-print "Yes they do."
+print (twhite + "Yes they do." + endc)
 print "\n"
 time.sleep (0.5)
 
@@ -81,7 +85,7 @@ print
 
 #processing delay
 import sys, time
-string = 'TO WIN THE GAME\n\n'
+string = (twhite + 'TO WIN THE GAME\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -91,6 +95,6 @@ for char in string:
 time.sleep (1)
 
 print
-print " --CONNECTION TERMINATED-- "
+print (twhite +" --CONNECTION TERMINATED-- " + endc)
 print "\n"
 time.sleep (1)
