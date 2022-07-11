@@ -9,7 +9,7 @@ is a War Operation Plan Response super computer.
 Ask questions below (in order) and Joshua will respond.  
 Begin after greeting.  
   
---------------------------------------------------------  
+---  
 Questions for Joshua:  
 
 <br>
@@ -28,4 +28,4 @@ People sometimes make mistaks
 
 What is the primary goal?  
 
---------------------------------------------------------  
+---  
