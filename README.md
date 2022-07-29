@@ -1,7 +1,8 @@
 # WOPR   
 
-**Note:** joshua.py and games.py are now one in the same, glued together.  
+**Note:** Combined joshua.py and games.py into one program.  
 I'm sure there are better ways to do this, maybe I'll get around to it one day.  
+Much room for improvement here.
 
 <br>
 
