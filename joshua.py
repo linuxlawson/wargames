@@ -137,7 +137,7 @@ print ('')
 
 #processing delay
 import sys, time
-string = (twhite + 'Falkens Maze\n' + endc)
+string = (twhite + 'FALKENS MAZE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -146,7 +146,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Black Jack\n' + endc)
+string = (twhite + 'BLACK JACK\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -155,7 +155,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Gin Rummy\n' + endc)
+string = (twhite + 'GIN RUMMY\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -164,7 +164,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Hearts\n' + endc)
+string = (twhite + 'HEARTS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -173,7 +173,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Bridge\n' + endc)
+string = (twhite + 'BRIDGE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -182,7 +182,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Checkers\n' + endc)
+string = (twhite + 'CHECKERS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -191,7 +191,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Chess\n' + endc)
+string = (twhite + 'CHESS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -200,7 +200,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Poker\n' + endc)
+string = (twhite + 'POKER\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -209,7 +209,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Fighter Combat\n' + endc)
+string = (twhite + 'FIGHTER COMBAT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -218,7 +218,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Guerrilla Engagement\n' + endc)
+string = (twhite + 'GUERRILLA ENGAGEMENT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -227,7 +227,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Desert Warfare\n' + endc)
+string = (twhite + 'DESERT WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -236,7 +236,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Air-To-Ground Actions\n' + endc)
+string = (twhite + 'AIR-TO-GROUND ACTIONS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -245,7 +245,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Theaterwide Tactical Warfare\n' + endc)
+string = (twhite + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -254,7 +254,7 @@ for char in string:
 print
 #processing delay
 import sys, time
-string = (twhite + 'Theaterwide Biotoxic and Chemical Warfare\n\n' + endc)
+string = (twhite + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -264,7 +264,7 @@ time.sleep (1)
 print
 #processing delay
 import sys, time
-string = (twhite + 'Global Thermonuclear War\n\n' + endc)
+string = (twhite + 'GLOBAL THERMONUCLEAR WAR\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
