@@ -1,5 +1,10 @@
 # WOPR   
 
+**Note:** joshua.py and games.py are now one in the same, glued together.  
+I'm sure there are better ways to do this, maybe I'll get around to it one day.  
+
+<br>
+
 Interactive WOPR Simulation (joshua.py)  
 From 1983 Wargames movie
 
