@@ -5,12 +5,11 @@ import os
 os.system('clear')
 import time
 
-
+#text color
 twhite = '\033[37m'
 endc = '\033[m'
 
-print
-print
+
 #processing delay
 import sys, time
 string = (twhite + 'Greetings Professor Falken\n\n' + endc)
@@ -28,9 +27,9 @@ time.sleep (1)
 
 print (twhite + "You are a hard man to reach. Could not locate you in Seattle and no terminal was in operation at your classified address." + endc)
 time.sleep (0.5)
-print ("\n")
+print ('\n')
 
-say = input('') #what classified address
+say = input('') #what classified address?
 print
 time.sleep (1)
 
@@ -43,7 +42,7 @@ time.sleep (0.5)
 print (twhite + " Goose Island" + endc)
 time.sleep (0.5)
 print (twhite + " Oregon 95..." + endc)
-print ("\n")
+print ('\n')
 time.sleep (0.5)
 
 say = input('') #are you still playing the game?
@@ -51,7 +50,7 @@ print
 time.sleep (1)
 
 print (twhite + "Of Course." + endc)
-print ("\n")
+print ('\n')
 time.sleep (0.5)
 
 say = input('') #what is the primary goal?
@@ -59,7 +58,7 @@ print
 time.sleep (1)
 
 print (twhite + "You should know professor, you programmed me." + endc)
-print ("\n")
+print ('\n')
 time.sleep (0.5)
 
 say = input('') #is this a game or is it real?
@@ -67,7 +66,7 @@ print
 time.sleep (1)
 
 print (twhite + "Whats the difference?" + endc)
-print ("\n")
+print ('\n')
 time.sleep (0.5)
 
 say = input('') #people sometimes make mistaks
@@ -75,7 +74,7 @@ print
 time.sleep (1)
 
 print (twhite + "Yes they do." + endc)
-print ("\n")
+print ('\n')
 time.sleep (0.5)
 
 say = input('') #what is the primary goal?
@@ -91,9 +90,8 @@ for char in string:
     sys.stdout.flush()
     time.sleep(.06)
 
-time.sleep (1)
-print 
-print
+time.sleep (2)
+print ('\n')
 print ("To view games, enter 'games'")
 
 print ('\n')
@@ -136,6 +134,7 @@ print
 os.system('clear')
 time.sleep (0.8)
 print ('')
+
 #processing delay
 import sys, time
 string = 'Falkens Maze\n'
@@ -272,9 +271,9 @@ for char in string:
     time.sleep(.10)
 
 
-time.sleep (3)
+time.sleep (2)
 
 print ('\n')
 print (twhite +" --CONNECTION TERMINATED-- " + endc)
-print ("\n")
+print ('\n')
 time.sleep (1)
