@@ -10,9 +10,11 @@ twhite = '\033[37m'
 endc = '\033[m'
 
 
-time.sleep(1)
+time.sleep(.7)
 print (twhite + "SHALL WE PLAY A GAME?\n" + endc)
 input ("")
+print (twhite + "\nFINE" + endc)
+time.sleep (.2)
 os.system('clear')
 
 
@@ -20,9 +22,21 @@ attempts=0
 while attempts<3:
     password=input('Password: ')
     if password=='joshua':
-        print('Access Granted')
+        print(twhite + '\nACCESS GRANTED' + endc)
         break
-time.sleep (.5)
+time.sleep (.4)
+os.system('clear')
+print(twhite + '-----------------' + endc)
+time.sleep (.3)
+os.system('clear')
+print(twhite + '\n-----------------' + endc)
+time.sleep (.2)
+os.system('clear')
+print(twhite + '\n\n-----------------' + endc)
+time.sleep (.1)
+os.system('clear')
+print(twhite + '-----------------' + endc)
+time.sleep (.1)
 os.system('clear')
 
 
@@ -157,7 +171,7 @@ string = (twhite + 'FALKENS MAZE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -166,7 +180,7 @@ string = (twhite + 'BLACK JACK\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -175,7 +189,7 @@ string = (twhite + 'GIN RUMMY\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -184,7 +198,7 @@ string = (twhite + 'HEARTS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -193,7 +207,7 @@ string = (twhite + 'BRIDGE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -202,7 +216,7 @@ string = (twhite + 'CHECKERS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -211,7 +225,7 @@ string = (twhite + 'CHESS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -220,7 +234,7 @@ string = (twhite + 'POKER\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -229,7 +243,7 @@ string = (twhite + 'FIGHTER COMBAT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -238,7 +252,7 @@ string = (twhite + 'GUERRILLA ENGAGEMENT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -247,7 +261,7 @@ string = (twhite + 'DESERT WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -256,7 +270,7 @@ string = (twhite + 'AIR-TO-GROUND ACTIONS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -265,7 +279,7 @@ string = (twhite + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 print
 #processing delay
@@ -274,7 +288,7 @@ string = (twhite + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 time.sleep (1)
 print
@@ -284,7 +298,7 @@ string = (twhite + 'GLOBAL THERMONUCLEAR WAR\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.08)
+    time.sleep(.07)
 
 
 time.sleep (2)
