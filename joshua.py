@@ -26,16 +26,16 @@ while attempts<3:
         break
 time.sleep (.4)
 os.system('clear')
-print(twhite + '-----------------' + endc)
+print(twhite + '--------------------' + endc)
 time.sleep (.3)
 os.system('clear')
-print(twhite + '\n-----------------' + endc)
+print(twhite + '\n--------------------' + endc)
 time.sleep (.2)
 os.system('clear')
-print(twhite + '\n\n-----------------' + endc)
+print(twhite + '\n\n--------------------' + endc)
 time.sleep (.1)
 os.system('clear')
-print(twhite + '-----------------' + endc)
+print(twhite + '--------------------' + endc)
 time.sleep (.1)
 os.system('clear')
 
@@ -308,4 +308,14 @@ print (twhite +" --CONNECTION TERMINATED-- " + endc)
 print ('\n')
 time.sleep (1)
 
+
+time.sleep (.2)
+os.system('clear')
+print (twhite + "##################################" + endc)
+print (twhite + "##   THE ONLY WINNING MOVE IS   ##" + endc)
+print (twhite + "##                              ##" + endc)
+print (twhite + "##          NOT TO PLAY         ##" + endc)
+print (twhite + "##################################\n\n" + endc)
+
+time.sleep (1)
 
