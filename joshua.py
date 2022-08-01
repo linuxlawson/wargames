@@ -2,8 +2,8 @@
 #Wargames - WOPR
 
 import os
-os.system('clear')
 import time
+os.system('clear')
 
 #text color
 twhite = '\033[37m'
@@ -20,7 +20,7 @@ os.system('clear')
 
 attempts=0
 while attempts<3:
-    password=input('Password: ')
+    password=input('Logon: ')
     if password=='joshua':
         print(twhite + '\nACCESS GRANTED' + endc)
         break
@@ -42,6 +42,7 @@ os.system('clear')
 
 #processing delay
 import sys, time
+time.sleep (.8)
 string = (twhite + 'Greetings Professor Falken\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -122,7 +123,7 @@ for char in string:
 
 time.sleep (2)
 print ('\n')
-print ("To view games, enter 'games'")
+print ("To continue, enter 'games'")
 
 print ('\n')
 list = input('')
@@ -171,7 +172,7 @@ string = (twhite + 'FALKENS MAZE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -180,7 +181,7 @@ string = (twhite + 'BLACK JACK\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -189,7 +190,7 @@ string = (twhite + 'GIN RUMMY\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -198,7 +199,7 @@ string = (twhite + 'HEARTS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -207,7 +208,7 @@ string = (twhite + 'BRIDGE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -216,7 +217,7 @@ string = (twhite + 'CHECKERS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -225,7 +226,7 @@ string = (twhite + 'CHESS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -234,7 +235,7 @@ string = (twhite + 'POKER\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -243,7 +244,7 @@ string = (twhite + 'FIGHTER COMBAT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -252,7 +253,7 @@ string = (twhite + 'GUERRILLA ENGAGEMENT\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -261,7 +262,7 @@ string = (twhite + 'DESERT WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -270,7 +271,7 @@ string = (twhite + 'AIR-TO-GROUND ACTIONS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -279,7 +280,7 @@ string = (twhite + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 print
 #processing delay
@@ -288,7 +289,7 @@ string = (twhite + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 time.sleep (1)
 print
@@ -298,7 +299,7 @@ string = (twhite + 'GLOBAL THERMONUCLEAR WAR\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.07)
+    time.sleep(.06)
 
 
 time.sleep (2)
@@ -312,10 +313,13 @@ time.sleep (1)
 time.sleep (.2)
 os.system('clear')
 print (twhite + "##################################" + endc)
+print (twhite + "##                              ##" + endc)
+print (twhite + "##        A STRANGE GAME        ##" + endc)
+print (twhite + "##                              ##" + endc)
 print (twhite + "##   THE ONLY WINNING MOVE IS   ##" + endc)
 print (twhite + "##                              ##" + endc)
 print (twhite + "##          NOT TO PLAY         ##" + endc)
+print (twhite + "##                              ##" + endc)
 print (twhite + "##################################\n\n" + endc)
-
 time.sleep (1)
 
