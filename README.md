@@ -1,12 +1,6 @@
 # WOPR  
 <sup>War Operation Plan Response</sup>  
 
-**Note:** Combined joshua.py and games.py into one program.  
-I'm sure there are better ways to do this, maybe I'll get around to it one day.  
-Much room for improvement here.
-
-<br>
-
 Interactive WOPR Simulation (joshua.py)  
 From 1983 Wargames movie
 
@@ -36,6 +30,3 @@ People sometimes make mistaks
 
 What is the primary goal?  
 
----  
-
-<sup>Global Thermonuclear War</sup>  
