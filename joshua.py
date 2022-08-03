@@ -21,6 +21,7 @@ time.sleep (.2)
 os.system('clear')
 
 
+#pass
 attempts=0
 while attempts<3:
     password=input('Logon: ')
@@ -29,7 +30,7 @@ while attempts<3:
         break
     else:
         print (white + "\nIDENTIFICATION NOT RECOGNIZED BY SYSTEM\n" + endc)
-        #break
+        
 time.sleep (.4)
 os.system('clear')
 print(white + '--------------------' + endc)
@@ -48,7 +49,7 @@ os.system('clear')
 
 #greet
 time.sleep (.8)
-string = (white + 'Greetings Professor Falken\n\n\n' + endc)
+string = (white + 'GREETINGS PROFESSOR FALKEN\n\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -60,7 +61,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "You are a hard man to reach. Could not locate you in Seattle and no terminal was in operation at your classified address." + endc)
+print (white + "YOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS." + endc)
 print ("\n")
 time.sleep (0.5)
 
@@ -70,7 +71,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "DOD Pension files indicate current mailing address as:\n" + endc)
+print (white + "DOD PENSION FILES INDICATE CURRENT MAILING ADDRESS AS:\n" + endc)
 time.sleep (0.5)
 print (white + " Dr. Robert Hume" + endc)
 time.sleep (0.5)
@@ -88,7 +89,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "Of Course." + endc)
+print (white + "OF COURSE." + endc)
 print ("\n")
 time.sleep (0.5)
 
@@ -98,7 +99,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "You should know professor, you programmed me." + endc)
+print (white + "YOU SHOULD KNOW PROFESSOR, YOU PROGRAMMED ME." + endc)
 print ("\n")
 time.sleep (0.5)
 
@@ -108,7 +109,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "Whats the difference?" + endc)
+print (white + "WHATS THE DIFFERENCE?" + endc)
 print ("\n")
 time.sleep (0.5)
 
@@ -118,7 +119,7 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "Yes they do." + endc)
+print (white + "YES THEY DO." + endc)
 print ("\n")
 time.sleep (0.5)
 
@@ -184,7 +185,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'BLACK JACK\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -192,7 +192,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'GIN RUMMY\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -200,7 +199,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'HEARTS\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -208,7 +206,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'BRIDGE\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -216,7 +213,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'CHECKERS\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -224,7 +220,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'CHESS\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -232,7 +227,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'POKER\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -240,7 +234,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'FIGHTER COMBAT\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -248,7 +241,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'GUERRILLA ENGAGEMENT\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -256,7 +248,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'DESERT WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -264,7 +255,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'AIR-TO-GROUND ACTIONS\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -272,7 +262,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -280,7 +269,6 @@ for char in string:
     time.sleep(.06)
 
 
-#glist
 string = (white + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
@@ -288,14 +276,13 @@ for char in string:
     time.sleep(.06)
 
 time.sleep (1)
-#glist
 string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.08) 
 
-time.sleep (.5)
+time.sleep (1)
 while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
     print (white + "1. End Game" + endc)
@@ -319,7 +306,6 @@ while True:
 
     elif que == "2":
         print ("")
-        #import sys
         string = (white + "DEFCON 1 2 " + endc) + (red + "3" + endc) + (white + " 4 5\n" + endc)
         for char in string:
             sys.stdout.write(char)
