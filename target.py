@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-#target to main (joshua)
+#target to main (joshua.py)
 
 import os
+import time
 import string
 import random
-import time
+
 os.system ('clear')
 
 #text color
@@ -18,7 +19,6 @@ bold = "\033[1m"
 results = string.ascii_uppercase + string.digits + ' '
 
 time.sleep (0.5)
-#print ("Launch Code scan in progress")
 target = ("CPE 1704 TKS")
 time.sleep (0.5)
 print ("")
@@ -30,7 +30,7 @@ completed = False
 generation = 0
 
 while completed == False:
-    print(' ', white +  attemptThis,'\033[F' + endc)
+    print(' ',bold + white +  attemptThis,'\033[F' + endc)
     attemptNext = ''
     completed = True
     for i in range(len(target)):
@@ -43,8 +43,6 @@ while completed == False:
     attemptThis = attemptNext
     time.sleep(0.1)
 
-#time.sleep (1)
-#print ("\n\n\n  " + attemptThis + " [Sys Check]")
 
 time.sleep (1)
 print ("\n\n\n  Launch Code Authenticated")
@@ -52,11 +50,12 @@ time.sleep (1)
 print ("\n  Launch Order Confirmed")
 time.sleep (1)
 print ("\n  Launch missles in T-minus " + str(generation) + " second(s)\n")
-time.sleep (.2)
+time.sleep (.5)
 print(white + '\n  -------------------------' + endc)
 time.sleep (.2)
 print(white + '\n  -------------------------' + endc)
 time.sleep (.5)
 print ("\n  Turn your key, sir.\n")
-time.sleep (.8)
+time.sleep (1)
 print("")
+
