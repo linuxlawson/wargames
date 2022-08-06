@@ -2,8 +2,12 @@
 #Wargames WOPR Simulation
 
 import os
-import sys
 import time
+import string
+import random
+import importlib
+import target as targ
+import sys
 
 #text color
 red='\033[1;31m'
@@ -285,34 +289,42 @@ for char in string:
 time.sleep (1)
 while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
-    print (white + "1. End Game" + endc)
-    print (white + "2. Get DEFCON Status\n" + endc)
+    print (white + "1. End Wargames" + endc)
+    print (white + "2. Get DEFCON Status" + endc)
+    print (white + "3. Get Launch Codes\n" + endc)
     que = input(yellow + "Please choose one: " + endc)
     
     if que == "1":
         time.sleep (.2)
         os.system('clear')
-        print (white + "##################################" + endc)
-        print (white + "##                              ##" + endc)
-        print (white + "##        A STRANGE GAME        ##" + endc)
-        print (white + "##                              ##" + endc)
-        print (white + "##   THE ONLY WINNING MOVE IS   ##" + endc)
-        print (white + "##                              ##" + endc)
-        print (white + "##          NOT TO PLAY         ##" + endc)
-        print (white + "##                              ##" + endc)
-        print (white + "##################################\n\n" + endc)
-        time.sleep (1)
-        break
-
-    elif que == "2":
-        print ("")
-        string = (white + "DEFCON 1 2 " + endc) + (red + "3" + endc) + (white + " 4 5\n" + endc)
+        #gameslist
+        string = (white + '\nA STRANGE GAME.\n\nTHE ONLY WINNING MOVE IS\n\nNOT TO PLAY.\n\n' + endc)
         for char in string:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(.06)
 
+        time.sleep (1)
+        break
+
+
+    if que == "2":
+        print ("")
+        import sys
+        string = (red + 'DEFCON 3\n' + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.06)
+        
+            
+    elif que == "3":
+        time.sleep (.2)
+        importlib.reload(targ) 
+        time.sleep(.06)
+
+
 time.sleep (.2)
-print (white +" --CONNECTION TERMINATED-- \n" + endc)
+print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
 time.sleep (.5)
 
