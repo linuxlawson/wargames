@@ -16,9 +16,8 @@ yellow ='\033[93m'
 endc = '\033[m'
 
 os.system('clear')
-
 time.sleep(.7)
-print (white + "SHALL WE PLAY A GAME?\n" + endc)
+print (white + "\nSHALL WE PLAY A GAME?\n" + endc)
 input ("")
 print (white + "\nFINE" + endc)
 time.sleep (.2)
@@ -28,7 +27,7 @@ os.system('clear')
 #pass
 attempts=0
 while attempts<3:
-    password=input('Logon: ')
+    password=input('\nLogon: ')
     if password=='joshua':
         print (white + '\nACCESS GRANTED' + endc)
         break
@@ -53,7 +52,7 @@ os.system('clear')
 
 #greet
 time.sleep (.8)
-string = (white + 'GREETINGS PROFESSOR FALKEN\n\n\n' + endc)
+string = (white + "\nGREETINGS PROFESSOR FALKEN\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -134,7 +133,7 @@ time.sleep (1)
 
 
 #answer
-string = (white + 'TO WIN THE GAME\n' + endc)
+string = (white + "TO WIN THE GAME\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -167,7 +166,7 @@ for char in string:
     sys.stdout.flush()
     time.sleep(.06)
 
-#os.system('clear')
+
 time.sleep (1)
 print ("\n") 
 print (yellow + "To view list, enter 'list games'" + endc)
@@ -228,14 +227,14 @@ string = (white + 'CHESS\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.06)
+    time.sleep(.07)
 
 
 string = (white + 'POKER\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.06)
+    time.sleep(.07)
 
 
 string = (white + 'FIGHTER COMBAT\n' + endc)
@@ -286,6 +285,7 @@ for char in string:
     sys.stdout.flush()
     time.sleep(.08) 
 
+#menu
 time.sleep (1)
 while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
@@ -295,14 +295,13 @@ while True:
     que = input(yellow + "Enter a number: " + endc)
     
     if que == "1":
-        time.sleep (.2)
         os.system('clear')
-        #gameslist
+        time.sleep (1)
         string = (white + '\nA STRANGE GAME.\n\nTHE ONLY WINNING MOVE IS\n\nNOT TO PLAY.\n\n' + endc)
         for char in string:
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(.06)
+            time.sleep(.08)
 
         time.sleep (1)
         break
