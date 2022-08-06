@@ -292,7 +292,7 @@ while True:
     print (white + "1. End Wargames" + endc)
     print (white + "2. Get DEFCON Status" + endc)
     print (white + "3. Get Launch Codes\n" + endc)
-    que = input(yellow + "Please choose one: " + endc)
+    que = input(yellow + "Enter a number: " + endc)
     
     if que == "1":
         time.sleep (.2)
