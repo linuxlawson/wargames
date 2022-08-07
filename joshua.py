@@ -92,8 +92,15 @@ print ("")
 time.sleep (1)
 
 #answer
-print (white + "OF COURSE." + endc)
-print ("\n")
+print (white + "OF COURSE.\n" + endc)
+time.sleep (1)
+print (white + "I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSILES IN 28 HOURS.\n" + endc)
+time.sleep (0.8)
+print (white + "WOULD YOU LIKE TO SEE SOME PROJECTED KILL RATIOS?\n" + endc)
+time.sleep (0.8)
+print (white + " 69% housing destroyed\n" + endc)
+time.sleep (0.5)
+print (white + " 72 million people dead\n\n" + endc)
 time.sleep (0.5)
 
 #ques
@@ -291,7 +298,8 @@ while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
     print (white + "1. End Wargames" + endc)
     print (white + "2. Get DEFCON Status" + endc)
-    print (white + "3. Get Launch Codes\n" + endc)
+    print (white + "3. Get Launch Codes" + endc)
+    print (white + "4. Review Statistics\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
     
     if que == "1":
@@ -317,12 +325,33 @@ while True:
             time.sleep(.06)
         
             
-    elif que == "3":
+    if que == "3":
         time.sleep (.2)
         importlib.reload(targ) 
         time.sleep(.06)
 
+    elif que == "4":        
+        time.sleep (0.6)
+        print ("")
+        string = (white + " 69% housing destroyed\n" + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.06)
 
+        string = (white + " 72 million people dead\n" + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.06)
+
+        string = (white + " to be continued...\n" + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.06)
+
+      
 time.sleep (.2)
 print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
 time.sleep (.5)
