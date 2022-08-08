@@ -2,7 +2,7 @@
 
 Wargames WOPR Computer Simulation
 
-The WOPR is a War Operation Plan Response super computer.  
+WOPR is a War Operation Plan Response super computer.  
 Anyone familiar with the Movie knows this.  
 
 
