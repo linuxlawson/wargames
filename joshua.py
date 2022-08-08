@@ -17,8 +17,15 @@ endc = '\033[m'
 
 os.system('clear')
 time.sleep(.7)
-print (white + "\nSHALL WE PLAY A GAME?\n" + endc)
+
+string = (white + "\nSHALL WE PLAY A GAME?\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 input ("")
+
 print (white + "\nFINE" + endc)
 time.sleep (.2)
 os.system('clear')
@@ -52,99 +59,145 @@ os.system('clear')
 
 #greet
 time.sleep (.8)
-string = (white + "\nGREETINGS PROFESSOR FALKEN\n\n\n" + endc)
+string = (white + "\nGREETINGS PROFESSOR FALKEN.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.05)
 
+
 #ques
 say = input('') #hello, joshua?
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "YOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS." + endc)
-print ("\n")
-time.sleep (0.5)
+string = (white + "YOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS.\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #what classified address?
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "DOD PENSION FILES INDICATE CURRENT MAILING ADDRESS AS:\n" + endc)
-time.sleep (0.5)
-print (white + " Dr. Robert Hume" + endc)
-time.sleep (0.5)
-print (white + " 5 Tall Cedar Road" + endc)
-time.sleep (0.5)
-print (white + " Goose Island" + endc)
-time.sleep (0.5)
-print (white + " Oregon 95..." + endc)
-print ("\n")
-time.sleep (0.5)
+string = (white + "DOD PENSION FILES INDICATE CURRENT MAILING ADDRESS AS:\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
+string = (white + " Dr. Robert Hume\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.04)
+    
+string = (white + " 5 Tall Cedar Road\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.04)
+
+string = (white + " Goose Island\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.04)
+    
+string = (white + " Oregon 95...\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #are you still playing the game?
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "OF COURSE.\n" + endc)
-time.sleep (1)
-print (white + "I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSILES IN 28 HOURS.\n" + endc)
-time.sleep (0.8)
-print (white + "WOULD YOU LIKE TO SEE SOME PROJECTED KILL RATIOS?\n" + endc)
-time.sleep (0.8)
-print (white + " 69% housing destroyed\n" + endc)
-time.sleep (0.5)
-print (white + " 72 million people dead\n\n" + endc)
-time.sleep (0.5)
+string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
+string = (white + "WOULD YOU LIKE TO SEE SOME PROJECTED KILL RATIOS?\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
+string = (white + " 69% housing destroyed\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+    
+string = (white + " 72 million people dead\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #what is the primary goal?
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "YOU SHOULD KNOW PROFESSOR, YOU PROGRAMMED ME." + endc)
-print ("\n")
-time.sleep (0.5)
+string = (white + "YOU SHOULD KNOW PROFESSOR, YOU PROGRAMMED ME.\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #is this a game or is it real?
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "WHATS THE DIFFERENCE?" + endc)
-print ("\n")
-time.sleep (0.5)
+string = (white + "WHATS THE DIFFERENCE?\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #people sometimes make mistaks
 print ("")
-time.sleep (1)
+time.sleep (.5)
 
 #answer
-print (white + "YES THEY DO." + endc)
-print ("\n")
-time.sleep (0.5)
+string = (white + "YES THEY DO.\n\n\n" + endc)
+for char in string:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(.05)
+
 
 #ques
 say = input('') #what is the primary goal?
 print ("")
-time.sleep (1)
+time.sleep (1.5)
 
 
 #answer
-string = (white + "TO WIN THE GAME\n" + endc)
+string = (white + "TO WIN THE GAME\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.06)
+    time.sleep(.05)
 
 
 time.sleep (1.5)
@@ -157,6 +210,7 @@ print ("\n\n")
 
 os.system('clear')
 time.sleep (1)
+
 #games
 string = (white + 'GAMES\n' + endc)
 for char in string:
@@ -296,10 +350,10 @@ for char in string:
 time.sleep (1)
 while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
-    print (white + "1. End Wargames" + endc)
-    print (white + "2. Get DEFCON Status" + endc)
-    print (white + "3. Get Launch Codes" + endc)
-    print (white + "4. Review Statistics\n" + endc)
+    print (white + " 1. End Wargames" + endc)
+    print (white + " 2. Get DEFCON Status" + endc)
+    print (white + " 3. Get Launch Codes" + endc)
+    print (white + " 4. Review Statistics\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
     
     if que == "1":
@@ -345,11 +399,18 @@ while True:
             sys.stdout.flush()
             time.sleep(.06)
 
-        string = (white + " to be continued...\n" + endc)
+        string = (white + " dogs are dyin, cats are croakin\n" + endc)
         for char in string:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(.06)
+
+        string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.06)
+
 
       
 time.sleep (.2)
