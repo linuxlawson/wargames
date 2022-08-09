@@ -2,12 +2,17 @@
 #Wargames WOPR Simulation
 
 import os
+import sys
 import time
 import string
 import random
 import importlib
-import target as targ
-import sys
+
+try:
+    import target as targ
+except ImportError:
+    print("Cannot import target module. Failure to launch.")
+
 
 #text color
 red='\033[1;31m'
@@ -71,7 +76,7 @@ say = input('') #hello, joshua?
 print ("")
 time.sleep (.5)
 
-#answer
+#wopr
 string = (white + "YOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -84,44 +89,38 @@ say = input('') #what classified address?
 print ("")
 time.sleep (.5)
 
-#answer
-string = (white + "DOD PENSION FILES INDICATE CURRENT MAILING ADDRESS AS:\n\n" + endc)
+#wopr
+string = (white + "DOD PENSION FILES INDICATE \nCURRENT MAILING AS:\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.05)
 
-string = (white + " Dr. Robert Hume\n" + endc)
+string = (white + " DR. ROBERT HUME (A.K.A. STEPHEN W. FALKEN)\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
     
-string = (white + " 5 Tall Cedar Road\n" + endc)
+string = (white + " 5 TALL CEDAR ROAD\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
 
-string = (white + " Goose Island\n" + endc)
+string = (white + " GOOSE ISLAND, OREGON  97014\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
     
-string = (white + " Oregon 95...\n\n\n" + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.05)
-
 
 #ques
 say = input('') #are you still playing the game?
 print ("")
 time.sleep (.5)
 
-#answer
+#wopr
 string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -152,7 +151,7 @@ say = input('') #what is the primary goal?
 print ("")
 time.sleep (.5)
 
-#answer
+#wopr
 string = (white + "YOU SHOULD KNOW PROFESSOR, YOU PROGRAMMED ME.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -165,7 +164,7 @@ say = input('') #is this a game or is it real?
 print ("")
 time.sleep (.5)
 
-#answer
+#wopr
 string = (white + "WHATS THE DIFFERENCE?\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -178,7 +177,7 @@ say = input('') #people sometimes make mistaks
 print ("")
 time.sleep (.5)
 
-#answer
+#wopr
 string = (white + "YES THEY DO.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -191,8 +190,7 @@ say = input('') #what is the primary goal?
 print ("")
 time.sleep (1.5)
 
-
-#answer
+#wopr
 string = (white + "TO WIN THE GAME\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -205,8 +203,14 @@ print ("\n")
 print (yellow + "To continue, enter 'games'" + endc)
 
 print ("\n")
-list = input('')
-print ("\n\n")
+attempts=0
+while attempts<3:
+    word=input('')
+    if word=='games':
+        print ("")
+        break
+    else:
+        print (white + "\n***Improper Request***\n" + endc)
 
 os.system('clear')
 time.sleep (1)
@@ -232,10 +236,16 @@ time.sleep (1)
 print ("\n") 
 print (yellow + "To view list, enter 'list games'" + endc)
 
-
 print ("\n")
-list = input('')
-print ("")
+attempts=0
+while attempts<3:
+    word=input('')
+    if word=='list games':
+        print ("")
+        break
+    else:
+        print (white + "\n***Improper Request***\n" + endc)
+
 
 os.system('clear')
 time.sleep (0.8)
@@ -340,7 +350,7 @@ for char in string:
     time.sleep(.06)
 
 time.sleep (1)
-string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n' + endc)
+string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -356,10 +366,23 @@ while True:
     print (white + " 4. Review Statistics\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
     
+
     if que == "1":
         os.system('clear')
         time.sleep (1)
-        string = (white + '\nA STRANGE GAME.\n\nTHE ONLY WINNING MOVE IS\n\nNOT TO PLAY.\n\n' + endc)
+        string = (white + '\nA STRANGE GAME.\n' + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.08)
+
+        string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
+        for char in string:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(.08)
+
+        string = (white + '\nNOT TO PLAY.\n\n' + endc)
         for char in string:
             sys.stdout.write(char)
             sys.stdout.flush()
@@ -414,6 +437,6 @@ while True:
 
       
 time.sleep (.2)
-print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
+print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
 time.sleep (.5)
 
