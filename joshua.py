@@ -21,7 +21,7 @@ yellow ='\033[93m'
 endc = '\033[m'
 
 os.system('clear')
-time.sleep(.7)
+time.sleep(.5)
 
 string = (white + "\nSHALL WE PLAY A GAME?\n\n" + endc)
 for char in string:
@@ -137,13 +137,13 @@ string = (white + " 69% housing destroyed\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.05)
+    time.sleep(.04)
     
 string = (white + " 72 million people dead\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.05)
+    time.sleep(.04)
 
 
 #ques
@@ -188,7 +188,7 @@ for char in string:
 #ques
 say = input('') #what is the primary goal?
 print ("")
-time.sleep (1.5)
+time.sleep (1)
 
 #wopr
 string = (white + "TO WIN THE GAME\n\n" + endc)
@@ -198,7 +198,7 @@ for char in string:
     time.sleep(.05)
 
 
-time.sleep (1.5)
+time.sleep (1)
 print ("\n")
 print (yellow + "To continue, enter 'games'" + endc)
 
@@ -213,23 +213,23 @@ while attempts<3:
         print (white + "\n***Improper Request***\n" + endc)
 
 os.system('clear')
-time.sleep (1)
+time.sleep (.5)
 
 #games
 string = (white + 'GAMES\n' + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.06)
+    time.sleep(.05)
 
-time.sleep (0.5)
+#time.sleep (0.5)
 
 #games desc
 string = (white + "'GAMES' REFERS TO MODELS, SIMULATIONS, AND GAMES\n WHICH HAVE TACTICAL, AND STRATEGIC APPLICATIONS.\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.06)
+    time.sleep(.05)
 
 
 time.sleep (1)
@@ -251,110 +251,113 @@ os.system('clear')
 time.sleep (0.8)
 print ("")
 
+
 #gameslist
-string = (white + 'FALKENS MAZE\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+def game_list():  
+    string = (white + 'FALKENS MAZE\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'BLACK JACK\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'BLACK JACK\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'GIN RUMMY\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'GIN RUMMY\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'HEARTS\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'HEARTS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'BRIDGE\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'BRIDGE\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'CHECKERS\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'CHECKERS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'CHESS\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.07)
+    string = (white + 'CHESS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.07)
 
 
-string = (white + 'POKER\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.07)
+    string = (white + 'POKER\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.07)
 
 
-string = (white + 'FIGHTER COMBAT\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'FIGHTER COMBAT\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'GUERRILLA ENGAGEMENT\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'GUERRILLA ENGAGEMENT\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'DESERT WARFARE\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'DESERT WARFARE\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'AIR-TO-GROUND ACTIONS\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'AIR-TO-GROUND ACTIONS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-string = (white + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.06)
+    string = (white + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
-time.sleep (1)
-string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.08) 
+    time.sleep (1)
+    string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08) 
+game_list()
 
 #menu
 time.sleep (1)
@@ -363,7 +366,8 @@ while True:
     print (white + " 1. End Wargames" + endc)
     print (white + " 2. Get DEFCON Status" + endc)
     print (white + " 3. Get Launch Codes" + endc)
-    print (white + " 4. Review Statistics\n" + endc)
+    print (white + " 4. Review Statistics" + endc)
+    print (white + " 5. List Games\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
     
 
@@ -407,7 +411,7 @@ while True:
         importlib.reload(targ) 
         time.sleep(.06)
 
-    elif que == "4":        
+    if que == "4":        
         time.sleep (0.6)
         print ("")
         string = (white + " 69% housing destroyed\n" + endc)
@@ -434,9 +438,14 @@ while True:
             sys.stdout.flush()
             time.sleep(.06)
 
-
+    elif que == "5":
+        os.system('clear')
+        print ("")
+        time.sleep (.2)
+        game_list()
+        time.sleep(.06)
       
-time.sleep (.2)
+time.sleep (.5)
 print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
 time.sleep (.5)
 
