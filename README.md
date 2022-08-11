@@ -42,20 +42,4 @@ What is the primary goal?
 
 <br><br>
 
-**Note:**   
-One problem I ran into was importing   
-a module (target) into the main program (joshua).  
-
-The problem was the import only ran once from the menu,  
-and no more after that. This could not be.  
-
-To fix this, I used reload, which caused it to run twice  
-from the menu the first time around. This could not be, either.  
-
-To fix that, I had to seperate the 2 instances.  
-This is why it runs once at the beginning.     
-This was not planned and eventually I will fix it.  
-
-Anyway, thats just how it is for now.   
-I'll keep messing around with it and see what happens.  
 
