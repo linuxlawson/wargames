@@ -30,7 +30,7 @@ completed = False
 generation = 0
 
 while completed == False:
-    print(' ',bold + white +  attemptThis,'\033[F' + endc)
+    print(' ',bold + white + attemptThis,'\033[F' + endc)
     attemptNext = ''
     completed = True
     for i in range(len(target)):
@@ -46,16 +46,16 @@ while completed == False:
 
 time.sleep (1)
 print ("\n\n\n  Launch Code Authenticated")
-time.sleep (1)
+time.sleep (0.8)
 print ("\n  Launch Order Confirmed")
-time.sleep (1)
+time.sleep (0.8)
 print ("\n  Launch missles in T-minus " + str(generation) + " second(s)\n")
-time.sleep (.5)
+time.sleep (0.5)
 print(white + '\n  -------------------------' + endc)
-time.sleep (.2)
+time.sleep (0.2)
 print(white + '\n  -------------------------' + endc)
-time.sleep (.5)
-print ("\n  Turn your key, sir.\n")
+time.sleep (0.4)
+print ("\n  'Turn your key, sir.'\n")
 time.sleep (1)
 print("")
 
