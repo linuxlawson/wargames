@@ -17,7 +17,8 @@ except ImportError:
 #text color
 red='\033[1;31m'
 white = '\033[37m'
-yellow ='\033[93m' 
+yellow ='\033[93m'
+bold = "\033[1m" 
 endc = '\033[m'
 
 os.system('clear')
@@ -96,19 +97,19 @@ for char in string:
     sys.stdout.flush()
     time.sleep(.05)
 
-string = (white + " DR. ROBERT HUME (A.K.A. STEPHEN W. FALKEN)\n" + endc)
+string = (white + " Dr. Robert Hume (aka Stephen W. Falken)\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
     
-string = (white + " 5 TALL CEDAR ROAD\n" + endc)
+string = (white + " 5 Tall Cedar Road\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
 
-string = (white + " GOOSE ISLAND, OREGON  97014\n\n\n" + endc)
+string = (white + " Goose Island, Oregon  97014\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -121,7 +122,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n\n" + endc)
+string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -133,7 +134,7 @@ for char in string:
     sys.stdout.flush()
     time.sleep(.05)
 
-string = (white + " 69% housing destroyed\n\n" + endc)
+string = (white + " 69% housing destroyed\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -252,7 +253,6 @@ print ("")
 #menu item 2
 def def_con():
     print ("")
-    import sys
     string = (red + 'DEFCON 3\n' + endc)
     for char in string:
         sys.stdout.write(char)
