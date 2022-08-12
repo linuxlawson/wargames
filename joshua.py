@@ -11,7 +11,7 @@ import importlib
 try:
     import target as targ
 except ImportError:
-    print("Cannot import target module. Failure to launch.")
+    print("Could not locate target. Failure to launch.")
 
 
 #text color
@@ -215,22 +215,20 @@ while attempts<3:
 os.system('clear')
 time.sleep (.5)
 
-#games
-string = (white + 'GAMES\n' + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.05)
-
-#time.sleep (0.5)
-
 #games desc
-string = (white + "'GAMES' REFERS TO MODELS, SIMULATIONS, AND GAMES\n WHICH HAVE TACTICAL, AND STRATEGIC APPLICATIONS.\n\n" + endc)
-for char in string:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(.05)
+def games_desc():
+    string = (white + 'GAMES\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
 
+    string = (white + "'GAMES' REFERS TO MODELS, SIMULATIONS, AND GAMES\n WHICH HAVE TACTICAL, AND STRATEGIC APPLICATIONS.\n\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
+games_desc()
 
 time.sleep (1)
 print ("\n") 
@@ -251,15 +249,56 @@ os.system('clear')
 time.sleep (0.8)
 print ("")
 
-
-#gameslist
-def game_list():  
-    string = (white + 'FALKENS MAZE\n' + endc)
+#menu item 2
+def def_con():
+    print ("")
+    import sys
+    string = (red + 'DEFCON 3\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
 
+
+#menu item 4
+def re_view():
+    time.sleep (0.6)
+    print ("")
+    string = (white + " 69% housing destroyed\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+    string = (white + " 72 million people dead\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+    string = (white + " dogs are dyin, cats are croakin\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+    string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+
+#menu item 5
+def game_list():
+    os.system('clear')
+    print ("")
+    time.sleep (.2)  
+    string = (white + 'FALKENS MAZE\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
     string = (white + 'BLACK JACK\n' + endc)
     for char in string:
@@ -267,13 +306,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.06)
 
-
     string = (white + 'GIN RUMMY\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
 
     string = (white + 'HEARTS\n' + endc)
     for char in string:
@@ -281,13 +318,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.06)
 
-
     string = (white + 'BRIDGE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
 
     string = (white + 'CHECKERS\n' + endc)
     for char in string:
@@ -295,13 +330,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.06)
 
-
     string = (white + 'CHESS\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.07)
-
 
     string = (white + 'POKER\n' + endc)
     for char in string:
@@ -309,13 +342,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.07)
 
-
     string = (white + 'FIGHTER COMBAT\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
 
     string = (white + 'GUERRILLA ENGAGEMENT\n' + endc)
     for char in string:
@@ -323,13 +354,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.06)
 
-
     string = (white + 'DESERT WARFARE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
 
     string = (white + 'AIR-TO-GROUND ACTIONS\n' + endc)
     for char in string:
@@ -337,13 +366,11 @@ def game_list():
         sys.stdout.flush()
         time.sleep(.06)
 
-
     string = (white + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
 
     string = (white + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
     for char in string:
@@ -397,14 +424,7 @@ while True:
 
 
     if que == "2":
-        print ("")
-        import sys
-        string = (red + 'DEFCON 3\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.06)
-        
+        def_con()   
             
     if que == "3":
         time.sleep (.2)
@@ -412,38 +432,11 @@ while True:
         time.sleep(.06)
 
     if que == "4":        
-        time.sleep (0.6)
-        print ("")
-        string = (white + " 69% housing destroyed\n" + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.06)
+        re_view()
 
-        string = (white + " 72 million people dead\n" + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.06)
-
-        string = (white + " dogs are dyin, cats are croakin\n" + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.06)
-
-        string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.06)
-
-    elif que == "5":
-        os.system('clear')
-        print ("")
-        time.sleep (.2)
+    elif que == "5":       
         game_list()
-        time.sleep(.06)
+
       
 time.sleep (.5)
 print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
