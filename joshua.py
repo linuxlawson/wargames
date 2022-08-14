@@ -9,9 +9,9 @@ import random
 import importlib
 
 try:
-    import target as targ
+    import launch
 except ImportError:
-    print("Could not locate target. Failure to launch.")
+    print("Could not import launch.")
 
 
 #text color
@@ -153,7 +153,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "YOU SHOULD KNOW PROFESSOR, YOU PROGRAMMED ME.\n\n\n" + endc)
+string = (white + "YOU SHOULD KNOW, PROFESSOR. YOU PROGRAMMED ME.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -192,7 +192,7 @@ print ("")
 time.sleep (1)
 
 #wopr
-string = (white + "TO WIN THE GAME\n\n" + endc)
+string = (white + "TO WIN THE GAME.\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -250,6 +250,7 @@ os.system('clear')
 time.sleep (0.8)
 print ("")
 
+
 #menu item 2
 def def_con():
     print ("")
@@ -259,35 +260,33 @@ def def_con():
         sys.stdout.flush()
         time.sleep(.06)
 
-
 #menu item 4
-def re_view():
+def view_stats():
     time.sleep (0.6)
     print ("")
     string = (white + " 69% housing destroyed\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.04)
 
     string = (white + " 72 million people dead\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.04)
 
     string = (white + " dogs are dyin, cats are croakin\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.04)
 
     string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
-
+        time.sleep(.04)
 
 #menu item 5
 def game_list():
@@ -298,102 +297,103 @@ def game_list():
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'BLACK JACK\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'GIN RUMMY\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'HEARTS\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'BRIDGE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'CHECKERS\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'CHESS\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.07)
+        time.sleep(.05)
 
     string = (white + 'POKER\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.07)
+        time.sleep(.05)
 
     string = (white + 'FIGHTER COMBAT\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'GUERRILLA ENGAGEMENT\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'DESERT WARFARE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'AIR-TO-GROUND ACTIONS\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'THEATERWIDE TACTICAL WARFARE\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     string = (white + 'THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.06)
+        time.sleep(.05)
 
     time.sleep (1)
     string = (white + 'GLOBAL THERMONUCLEAR WAR\n\n\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.08) 
+        time.sleep(.07) 
 game_list()
+
 
 #menu
 time.sleep (1)
 while True:
     print (yellow + "\nWhat do you want to do?\n" + endc)
     print (white + " 1. End Wargames" + endc)
-    print (white + " 2. Get DEFCON Status" + endc)
-    print (white + " 3. Get Launch Codes" + endc)
-    print (white + " 4. Review Statistics" + endc)
+    print (white + " 2. See DEFCON Status" + endc)
+    print (white + " 3. Get Launch Code" + endc)
+    print (white + " 4. View Statistics" + endc)
     print (white + " 5. List Games\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
     
@@ -418,8 +418,6 @@ while True:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(.08)
-
-        time.sleep (1)
         break
 
 
@@ -428,17 +426,18 @@ while True:
             
     if que == "3":
         time.sleep (.2)
-        importlib.reload(targ) 
+        importlib.reload(launch) 
         time.sleep(.06)
 
     if que == "4":        
-        re_view()
+        view_stats()
 
     elif que == "5":       
         game_list()
 
-      
-time.sleep (.5)
+    
+time.sleep (0.6)
 print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
-time.sleep (.5)
+time.sleep (0.6)
+
 
