@@ -5,13 +5,6 @@ import os
 import sys
 import time
 import string
-import random
-import importlib
-
-try:
-    import launch
-except ImportError:
-    print("Could not import launch.")
 
 
 #text color
@@ -23,6 +16,10 @@ endc = '\033[m'
 
 os.system('clear')
 time.sleep(.5)
+
+
+def main():
+    print ("")
 
 string = (white + "\nSHALL WE PLAY A GAME?\n\n" + endc)
 for char in string:
@@ -40,7 +37,7 @@ os.system('clear')
 #pass
 attempts=0
 while attempts<3:
-    password=input('\nLogon: ')
+    password=input(white + '\nLogon: ' + endc)
     if password=='joshua':
         print (white + '\nACCESS GRANTED' + endc)
         break
@@ -63,8 +60,9 @@ time.sleep (.1)
 os.system('clear')
 
 
-#greet
-time.sleep (.8)
+#greet/conversation
+def con_verse():
+    time.sleep (.8)
 string = (white + "\nGREETINGS PROFESSOR FALKEN.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -197,6 +195,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.05)
+con_verse()
 
 
 time.sleep (1)
@@ -231,6 +230,7 @@ def games_desc():
         time.sleep(.05)
 games_desc()
 
+
 time.sleep (1)
 print ("\n") 
 print (yellow + "To view list, enter 'list games'" + endc)
@@ -260,6 +260,17 @@ def def_con():
         sys.stdout.flush()
         time.sleep(.06)
 
+
+#menu item 3
+def launch_codes():
+    print ("")
+    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT BEEN REACHED.\nWILL UPLOAD CODE WHEN READY.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+
 #menu item 4
 def view_stats():
     time.sleep (0.6)
@@ -268,25 +279,26 @@ def view_stats():
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.04)
+        time.sleep(.05)
 
     string = (white + " 72 million people dead\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.04)
+        time.sleep(.05)
 
     string = (white + " dogs are dyin, cats are croakin\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.04)
+        time.sleep(.05)
 
     string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(.04)
+        time.sleep(.05)
+
 
 #menu item 5
 def game_list():
@@ -421,15 +433,13 @@ while True:
         break
 
 
-    if que == "2":
+    elif que == "2":
         def_con()   
             
-    if que == "3":
-        time.sleep (.2)
-        importlib.reload(launch) 
-        time.sleep(.06)
+    elif que == "3":
+        launch_codes()
 
-    if que == "4":        
+    elif que == "4":        
         view_stats()
 
     elif que == "5":       
@@ -439,5 +449,8 @@ while True:
 time.sleep (0.6)
 print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
 time.sleep (0.6)
+
+if __name__ == "__main__":
+    main()
 
 
