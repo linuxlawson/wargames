@@ -38,27 +38,32 @@ os.system('clear')
 attempts=0
 while attempts<3:
     password=input(white + '\nLogon: ' + endc)
-    if password=='joshua':
+    if password == 'joshua':
+        print (white + '\nACCESS GRANTED' + endc)
+        break
+    elif password == ('Joshua'):
         print (white + '\nACCESS GRANTED' + endc)
         break
     else:
         print (white + "\nIDENTIFICATION NOT RECOGNIZED BY SYSTEM\n" + endc)
-        
-time.sleep (.4)
-os.system('clear')
-print(white + '--------------------' + endc)
-time.sleep (.3)
-os.system('clear')
-print(white + '\n--------------------' + endc)
-time.sleep (.2)
-os.system('clear')
-print(white + '\n\n--------------------' + endc)
-time.sleep (.1)
-os.system('clear')
-print(white + '--------------------' + endc)
-time.sleep (.1)
-os.system('clear')
 
+
+def is_glitch(): 
+    time.sleep (.4)
+    os.system('clear')
+    print(white + '--------------------' + endc)
+    time.sleep (.3)
+    os.system('clear')
+    print(white + '\n--------------------' + endc)
+    time.sleep (.2)
+    os.system('clear')
+    print(white + '\n\n--------------------' + endc)
+    time.sleep (.1)
+    os.system('clear')
+    print(white + '--------------------' + endc)
+    time.sleep (.1)
+    os.system('clear')
+is_glitch()
 
 #greet/conversation
 def con_verse():
@@ -67,13 +72,13 @@ string = (white + "\nGREETINGS PROFESSOR FALKEN.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.05)
+    time.sleep(.04)
 
 
 #ques
 say = input('') #hello, joshua?
 print ("")
-time.sleep (.5)
+time.sleep (.1)
 
 #wopr
 string = (white + "YOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS.\n\n\n" + endc)
@@ -100,7 +105,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 string = (white + " 5 Tall Cedar Road\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -112,7 +117,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 
 #ques
 say = input('') #are you still playing the game?
@@ -137,7 +142,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 string = (white + " 72 million people dead\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -304,7 +309,7 @@ def view_stats():
 def game_list():
     os.system('clear')
     print ("")
-    time.sleep (.2)  
+    time.sleep (.2)
     string = (white + 'FALKENS MAZE\n' + endc)
     for char in string:
         sys.stdout.write(char)
@@ -399,18 +404,31 @@ game_list()
 
 
 #menu
-time.sleep (1)
+def menu_code():
+	time.sleep (1)
 while True:
-    print (yellow + "\nWhat do you want to do?\n" + endc)
-    print (white + " 1. End Wargames" + endc)
-    print (white + " 2. See DEFCON Status" + endc)
-    print (white + " 3. Get Launch Code" + endc)
-    print (white + " 4. View Statistics" + endc)
-    print (white + " 5. List Games\n" + endc)
+    print (yellow + "\nMenu Options\n" + endc)
+    print (white + " 1. DEFCON Status" + endc)
+    print (white + " 2. Get Launch Code" + endc)
+    print (white + " 3. View Statistics" + endc)
+    print (white + " 4. List Games" + endc)
+    print (white + " 5. End Wargames\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
-    
+
 
     if que == "1":
+        def_con()   
+
+    elif que == "2":
+        launch_codes()
+
+    elif que == "3":
+        view_stats()
+
+    elif que == "4":
+        game_list()
+
+    elif que == "5":
         os.system('clear')
         time.sleep (1)
         string = (white + '\nA STRANGE GAME.\n' + endc)
@@ -431,24 +449,16 @@ while True:
             sys.stdout.flush()
             time.sleep(.08)
         break
+menu_code()
 
 
-    elif que == "2":
-        def_con()   
-            
-    elif que == "3":
-        launch_codes()
-
-    elif que == "4":        
-        view_stats()
-
-    elif que == "5":       
-        game_list()
-
-    
-time.sleep (0.6)
+def good_bye():
+    time.sleep (0.5)
 print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
-time.sleep (0.6)
+time.sleep (0.5)
+good_bye()
+
+
 
 if __name__ == "__main__":
     main()
