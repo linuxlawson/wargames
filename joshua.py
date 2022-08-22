@@ -65,6 +65,7 @@ def is_glitch():
     os.system('clear')
 is_glitch()
 
+
 #greet/conversation
 def con_verse():
     time.sleep (.8)
@@ -125,7 +126,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n" + endc)
+string = (white + "OF COURSE.\nI SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -428,35 +429,36 @@ while True:
     elif que == "4":
         game_list()
 
-    elif que == "5":
-        os.system('clear')
-        time.sleep (1)
-        string = (white + '\nA STRANGE GAME.\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
-
-        string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
-
-        string = (white + '\nNOT TO PLAY.\n\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
+    elif que == "5":        
         break
 menu_code()
 
 
-def good_bye():
+def end_game():
+    os.system('clear')
+    time.sleep (1)
+    string = (white + '\nA STRANGE GAME.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nNOT TO PLAY.\n\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    time.sleep (.8)
+    print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
     time.sleep (0.5)
-print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
-time.sleep (0.5)
-good_bye()
+end_game()
 
 
 
