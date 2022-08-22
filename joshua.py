@@ -256,7 +256,7 @@ time.sleep (0.8)
 print ("")
 
 
-#menu item 2
+#menu item 1
 def def_con():
     print ("")
     string = (red + 'DEFCON 3\n' + endc)
@@ -266,7 +266,7 @@ def def_con():
         time.sleep(.06)
 
 
-#menu item 3
+#menu item 2
 def launch_codes():
     print ("")
     string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT BEEN REACHED.\nWILL UPLOAD CODE WHEN READY.\n' + endc)
@@ -276,7 +276,7 @@ def launch_codes():
         time.sleep(.06)
 
 
-#menu item 4
+#menu item 3
 def view_stats():
     time.sleep (0.6)
     print ("")
@@ -305,7 +305,7 @@ def view_stats():
         time.sleep(.05)
 
 
-#menu item 5
+#menu item 4
 def game_list():
     os.system('clear')
     print ("")
