@@ -38,10 +38,10 @@ os.system('clear')
 attempts=0
 while attempts<3:
     password=input(white + '\nLogon: ' + endc)
-    if password == 'joshua':
+    if password == 'Joshua':
         print (white + '\nACCESS GRANTED' + endc)
         break
-    elif password == ('Joshua'):
+    elif password == ('joshua'):
         print (white + '\nACCESS GRANTED' + endc)
         break
     else:
@@ -204,7 +204,7 @@ for char in string:
 con_verse()
 
 
-time.sleep (1)
+time.sleep (.8)
 print ("\n")
 print (yellow + "To continue, enter 'games'" + endc)
 
@@ -237,7 +237,7 @@ def games_desc():
 games_desc()
 
 
-time.sleep (1)
+time.sleep (.8)
 print ("\n") 
 print (yellow + "To view list, enter 'list games'" + endc)
 
@@ -260,7 +260,7 @@ print ("")
 #menu item 1
 def def_con():
     print ("")
-    string = (red + 'DEFCON 3\n' + endc)
+    string = (red + 'DEFCON 2\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -268,16 +268,6 @@ def def_con():
 
 
 #menu item 2
-def launch_codes():
-    print ("")
-    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT BEEN REACHED.\nWILL UPLOAD CODE WHEN READY.\n' + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.06)
-
-
-#menu item 3
 def view_stats():
     time.sleep (0.6)
     print ("")
@@ -306,7 +296,7 @@ def view_stats():
         time.sleep(.05)
 
 
-#menu item 4
+#menu item 3
 def game_list():
     os.system('clear')
     print ("")
@@ -404,36 +394,17 @@ def game_list():
 game_list()
 
 
-#menu
-def menu_code():
-	time.sleep (1)
-while True:
-    print (yellow + "\nMenu Options\n" + endc)
-    print (white + " 1. DEFCON Status" + endc)
-    print (white + " 2. Get Launch Code" + endc)
-    print (white + " 3. View Statistics" + endc)
-    print (white + " 4. List Games" + endc)
-    print (white + " 5. End Wargames\n" + endc)
-    que = input(yellow + "Enter a number: " + endc)
+#menu item 4
+def launch_code():
+    print ("")
+    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT YET BEEN REACHED.\nWILL UPLOAD CODE WHEN END IS NEAR.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
 
 
-    if que == "1":
-        def_con()   
-
-    elif que == "2":
-        launch_codes()
-
-    elif que == "3":
-        view_stats()
-
-    elif que == "4":
-        game_list()
-
-    elif que == "5":        
-        break
-menu_code()
-
-
+#menu item 5
 def end_game():
     os.system('clear')
     time.sleep (1)
@@ -456,9 +427,40 @@ def end_game():
         time.sleep(.08)
 
     time.sleep (.8)
-    print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
+    print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
     time.sleep (0.5)
-end_game()
+
+
+time.sleep (1)
+#menu
+def menu_code():
+	print ("")
+while True:
+    print (yellow + "\nMenu Options\n" + endc)
+    print (white + " 1. DEFCON Status" + endc)
+    print (white + " 2. View Statistics" + endc)
+    print (white + " 3. List Games" + endc)
+    print (white + " 4. Get Launch Code" + endc)
+    print (white + " 5. End Wargames\n" + endc)
+    que = input(yellow + "Enter a number: " + endc)
+
+
+    if que == "1":
+        def_con()   
+
+    elif que == "2":
+        view_stats()
+
+    elif que == "3":
+        game_list()
+
+    elif que == "4":
+        launch_code()
+
+    elif que == "5":
+        end_game()        
+        break
+menu_code()
 
 
 
