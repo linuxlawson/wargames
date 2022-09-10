@@ -4,8 +4,9 @@
 import os
 import sys
 import time
+import datetime
 import string
-
+from time import sleep
 
 #text color
 red='\033[1;31m'
@@ -38,26 +39,35 @@ os.system('clear')
 attempts=0
 while attempts<3:
     password=input(white + '\nLogon: ' + endc)
-    if password=='joshua':
+    if password == 'Joshua':
         print (white + '\nACCESS GRANTED' + endc)
         break
+    elif password == ('joshua'):
+        print (white + '\nACCESS GRANTED' + endc)
+        break
+    elif password == ('help'):
+        print (white + '\nHELP NOT AVAILABLE\n' + endc)
+        #break
     else:
         print (white + "\nIDENTIFICATION NOT RECOGNIZED BY SYSTEM\n" + endc)
-        
-time.sleep (.4)
-os.system('clear')
-print(white + '--------------------' + endc)
-time.sleep (.3)
-os.system('clear')
-print(white + '\n--------------------' + endc)
-time.sleep (.2)
-os.system('clear')
-print(white + '\n\n--------------------' + endc)
-time.sleep (.1)
-os.system('clear')
-print(white + '--------------------' + endc)
-time.sleep (.1)
-os.system('clear')
+
+
+def is_glitch(): 
+    time.sleep (.4)
+    os.system('clear')
+    print(white + '--------------------' + endc)
+    time.sleep (.3)
+    os.system('clear')
+    print(white + '\n--------------------' + endc)
+    time.sleep (.2)
+    os.system('clear')
+    print(white + '\n\n--------------------' + endc)
+    time.sleep (.1)
+    os.system('clear')
+    print(white + '--------------------' + endc)
+    time.sleep (.1)
+    os.system('clear')
+is_glitch()
 
 
 #greet/conversation
@@ -67,7 +77,7 @@ string = (white + "\nGREETINGS PROFESSOR FALKEN.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(.05)
+    time.sleep(.04)
 
 
 #ques
@@ -100,7 +110,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 string = (white + " 5 Tall Cedar Road\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -112,7 +122,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 
 #ques
 say = input('') #are you still playing the game?
@@ -120,7 +130,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "OF COURSE. I SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n" + endc)
+string = (white + "OF COURSE.\nI SHOULD REACH DEFCON 1 AND LAUNCH MY MISSLES IN 28 HOURS.\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -137,7 +147,7 @@ for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
-    
+
 string = (white + " 72 million people dead\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
@@ -151,7 +161,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "YOU SHOULD KNOW, PROFESSOR. YOU PROGRAMMED ME.\n\n\n" + endc)
+string = (white + "YOU SHOULD KNOW PROFESSOR. YOU PROGRAMMED ME.\n\n\n" + endc)
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -197,8 +207,8 @@ for char in string:
     time.sleep(.05)
 con_verse()
 
-
-time.sleep (1)
+def cont_one():
+    time.sleep (.8)
 print ("\n")
 print (yellow + "To continue, enter 'games'" + endc)
 
@@ -211,6 +221,7 @@ while attempts<3:
         break
     else:
         print (white + "\n***Improper Request***\n" + endc)
+cont_one()
 
 os.system('clear')
 time.sleep (.5)
@@ -230,8 +241,8 @@ def games_desc():
         time.sleep(.05)
 games_desc()
 
-
-time.sleep (1)
+def cont_two():
+    time.sleep (.8)
 print ("\n") 
 print (yellow + "To view list, enter 'list games'" + endc)
 
@@ -244,11 +255,31 @@ while attempts<3:
         break
     else:
         print (white + "\n***Improper Request***\n" + endc)
-
+cont_two()
 
 os.system('clear')
 time.sleep (0.8)
 print ("")
+
+#menu item 1
+def sunny_vale():
+    os.system('clear')
+    print (white + "\nCALLING EVERY NUMBER IN SUNNYVALE, CA")
+    print ("SEARCHING FOR NUMBER TO PROTOVISION\n")
+    time.sleep (.4)
+    print ("AREA\nCODE PRFX NUMBER")
+    print ("")
+    time.sleep (.6)
+
+    acode = ["(311)"]
+    prefx = ["767"]
+    for x in acode:
+        for y in prefx:
+            for z in range(9978, 9999): 
+                print(x, y, z); sleep(1)
+
+    print ("\nThis could take days, so..")
+    print ("\n-Disconnected-" + endc)
 
 
 #menu item 2
@@ -262,16 +293,6 @@ def def_con():
 
 
 #menu item 3
-def launch_codes():
-    print ("")
-    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT BEEN REACHED.\nWILL UPLOAD CODE WHEN READY.\n' + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.06)
-
-
-#menu item 4
 def view_stats():
     time.sleep (0.6)
     print ("")
@@ -287,24 +308,24 @@ def view_stats():
         sys.stdout.flush()
         time.sleep(.05)
 
-    string = (white + " dogs are dyin, cats are croakin\n" + endc)
+    string = (white + " Dogs are dyin, cats are croakin\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.05)
 
-    string = (white + " fish are floppin, and the birds cant breathe!\n" + endc)
+    string = (white + " Fish are floppin, and the birds cant breathe!\n" + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.05)
 
 
-#menu item 5
+#menu item 4
 def game_list():
     os.system('clear')
     print ("")
-    time.sleep (.2)  
+    time.sleep (.2)
     string = (white + 'FALKENS MAZE\n' + endc)
     for char in string:
         sys.stdout.write(char)
@@ -398,57 +419,96 @@ def game_list():
 game_list()
 
 
-#menu
+#menu item 5
+def launch_code():
+    print ("")
+    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT YET BEEN REACHED.\nWILL UPLOAD CODE WHEN END IS NEAR.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.06)
+
+#menu item 6
+def time_remain(timer):
+    print (white + "\n ESTIMATED TIME REMAINING: \n" + endc)
+    while timer:
+        mins, secs = divmod(timer, 60)
+        timeformat = '{:02d}'.format(secs)
+        print (white + "  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
+        time.sleep(1)
+        timer -= 1
+
+print ("\n")
+
+
+
+#menu item 7
+def end_game():
+    os.system('clear')
+    time.sleep (1)
+    string = (white + '\nA STRANGE GAME.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nNOT TO PLAY.\n\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    time.sleep (.8)
+    print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
+    time.sleep (0.5)
+
 time.sleep (1)
+
+
+#menu
+def menu_code():
+	print ("")
 while True:
-    print (yellow + "\nWhat do you want to do?\n" + endc)
-    print (white + " 1. End Wargames" + endc)
-    print (white + " 2. See DEFCON Status" + endc)
-    print (white + " 3. Get Launch Code" + endc)
-    print (white + " 4. View Statistics" + endc)
-    print (white + " 5. List Games\n" + endc)
+    print (yellow + "\nMenu Options\n" + endc)
+    print (white + " 1. Call Sunnyvale" + endc)
+    print (white + " 2. DEFCON Status" + endc)
+    print (white + " 3. View Statistics" + endc)
+    print (white + " 4. List Games" + endc)
+    print (white + " 5. Get Launch Code" + endc)
+    print (white + " 6. Time Remaining" + endc)
+    print (white + " 7. End Wargames\n" + endc)
     que = input(yellow + "Enter a number: " + endc)
-    
 
     if que == "1":
-        os.system('clear')
-        time.sleep (1)
-        string = (white + '\nA STRANGE GAME.\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
+        sunny_vale() 
 
-        string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
-
-        string = (white + '\nNOT TO PLAY.\n\n' + endc)
-        for char in string:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(.08)
-        break
-
-
-    elif que == "2":
+    if que == "2":
         def_con()   
-            
-    elif que == "3":
-        launch_codes()
 
-    elif que == "4":        
+    elif que == "3":
         view_stats()
 
-    elif que == "5":       
+    elif que == "4":
         game_list()
 
-    
-time.sleep (0.6)
-print (white +" \n--CONNECTION TERMINATED-- \n\n" + endc)
-time.sleep (0.6)
+    elif que == "5":
+        launch_code()
+
+    elif que == "6":
+        time_remain(6)
+
+    elif que == "7":
+        end_game()        
+        break
+menu_code()
+
+
 
 if __name__ == "__main__":
     main()
