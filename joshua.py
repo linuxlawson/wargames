@@ -39,7 +39,7 @@ os.system('clear')
 attempts=0
 while attempts<3:
     password=input(white + '\nLogon: ' + endc)
-    if password == 'Joshua':
+    if password == ('Joshua'):
         print (white + '\nACCESS GRANTED' + endc)
         break
     elif password == ('joshua'):
@@ -47,7 +47,6 @@ while attempts<3:
         break
     elif password == ('help'):
         print (white + '\nHELP NOT AVAILABLE\n' + endc)
-        #break
     else:
         print (white + "\nIDENTIFICATION NOT RECOGNIZED BY SYSTEM\n" + endc)
 
@@ -207,27 +206,10 @@ for char in string:
     time.sleep(.05)
 con_verse()
 
-def cont_one():
-    time.sleep (.8)
-print ("\n")
-print (yellow + "To continue, enter 'games'" + endc)
-
-print ("\n")
-attempts=0
-while attempts<3:
-    word=input('')
-    if word=='games':
-        print ("")
-        break
-    else:
-        print (white + "\n***Improper Request***\n" + endc)
-cont_one()
-
-os.system('clear')
-time.sleep (.5)
 
 #games desc
 def games_desc():
+    os.system('clear')
     string = (white + 'GAMES\n' + endc)
     for char in string:
         sys.stdout.write(char)
@@ -239,86 +221,54 @@ def games_desc():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.05)
-games_desc()
 
-def cont_two():
-    time.sleep (.8)
-print ("\n") 
-print (yellow + "To view list, enter 'list games'" + endc)
 
-print ("\n")
-attempts=0
-while attempts<3:
-    word=input('')
-    if word=='list games':
-        print ("")
-        break
-    else:
-        print (white + "\n***Improper Request***\n" + endc)
-cont_two()
-
-os.system('clear')
-time.sleep (0.8)
-print ("")
-
-#menu item 1
-def sunny_vale():
+#menu item 7
+def end_game():
     os.system('clear')
-    print (white + "\nCALLING EVERY NUMBER IN SUNNYVALE, CA")
-    print ("SEARCHING FOR NUMBER TO PROTOVISION\n")
-    time.sleep (.4)
-    print ("AREA\nCODE PRFX NUMBER")
+    time.sleep (1)
+    string = (white + '\nA STRANGE GAME.\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    string = (white + '\nNOT TO PLAY.\n\n' + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.08)
+
+    time.sleep (.8)
+    print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
+    time.sleep (0.5)
+
+
+#menu item 6
+def time_remain(timer):
+    print (white + "\n ESTIMATED TIME REMAINING: \n" + endc)
+    while timer:
+        mins, secs = divmod(timer, 60)
+        timeformat = '{:02d}'.format(secs)
+        print (white + "  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
+        time.sleep(1)
+        timer -= 1
+
+
+#menu item 5
+def launch_code():
     print ("")
-    time.sleep (.6)
-
-    acode = ["(311)"]
-    prefx = ["767"]
-    for x in acode:
-        for y in prefx:
-            for z in range(9978, 9999): 
-                print(x, y, z); sleep(1)
-
-    print ("\nThis could take days, so..")
-    print ("\n-Disconnected-" + endc)
-
-
-#menu item 2
-def def_con():
-    print ("")
-    string = (red + 'DEFCON 3\n' + endc)
+    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT YET BEEN REACHED.\nWILL UPLOAD CODE WHEN END IS NEAR.\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
-
-
-#menu item 3
-def view_stats():
-    time.sleep (0.6)
-    print ("")
-    string = (white + " 69% housing destroyed\n" + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.05)
-
-    string = (white + " 72 million people dead\n" + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.05)
-
-    string = (white + " Dogs are dyin, cats are croakin\n" + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.05)
-
-    string = (white + " Fish are floppin, and the birds cant breathe!\n" + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.05)
 
 
 #menu item 4
@@ -416,59 +366,103 @@ def game_list():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.07) 
-game_list()
 
 
-#menu item 5
-def launch_code():
+#menu item 3
+def view_stats():
+    time.sleep (0.6)
     print ("")
-    string = (white + 'CANNOT INITIATE LAUNCH CODE SEQUENCE.\nREASON: DEFCON 1 HAS NOT YET BEEN REACHED.\nWILL UPLOAD CODE WHEN END IS NEAR.\n' + endc)
+    string = (white + " 69% housing destroyed\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
+
+    string = (white + " 72 million people dead\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
+
+    string = (white + " Dogs are dyin, cats are croakin\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
+
+    string = (white + " Fish are floppin, and the birds cant breathe!\n" + endc)
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.05)
+
+
+#menu item 2
+def def_con():
+    print ("")
+    string = (red + 'DEFCON 3\n' + endc)
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(.06)
 
-#menu item 6
-def time_remain(timer):
-    print (white + "\n ESTIMATED TIME REMAINING: \n" + endc)
-    while timer:
-        mins, secs = divmod(timer, 60)
-        timeformat = '{:02d}'.format(secs)
-        print (white + "  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
-        time.sleep(1)
-        timer -= 1
 
-print ("\n")
-
-
-
-#menu item 7
-def end_game():
+#menu item 1
+def sunny_vale():
     os.system('clear')
+    print (white + "\nCALLING EVERY NUMBER IN SUNNYVALE, CA")
+    time.sleep (.5)
+    print ("SEARCHING FOR PROTOVISION\n")
+    time.sleep (.5)
+    print ("AREA\nCODE PRFX NUMBER")
+    print ("")
     time.sleep (1)
-    string = (white + '\nA STRANGE GAME.\n' + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.08)
 
-    string = (white + '\nTHE ONLY WINNING MOVE IS\n' + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.08)
+    acode = ["(311)"]
+    prefx = ["767"]
+    for x in acode:
+        for y in prefx:
+            for z in range(9978, 9999): 
+                print(x, y, z); sleep(1)
 
-    string = (white + '\nNOT TO PLAY.\n\n' + endc)
-    for char in string:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(.08)
+    print ("\nThis could take days, so..")
+    time.sleep (.6)
+    print ("\n-Disconnected-" + endc)
+    time.sleep (1)
 
+
+def enter_one():
     time.sleep (.8)
-    print (white +" \n--CONNECTION TERMINATED-- \n" + endc)
-    time.sleep (0.5)
+print ("")
+print (yellow + "To continue, enter 'games'" + endc)
 
-time.sleep (1)
+attempts=0
+while attempts<3:
+    uname = input("\n")
+    if uname == 'games':
+        print ("")
+        games_desc()
+        break
+    else:
+        print (white + '\n***Improper Request***' + endc)
+enter_one()
+
+
+def enter_two():
+    time.sleep (.8)
+print ("") 
+print (yellow + "To view list, enter 'list games'" + endc)
+
+attempts=0
+while attempts<3:
+    uname = input("\n")
+    if uname == 'list games':
+        print ("")
+        game_list()
+        break
+    else:
+        print (white + '\n***Improper Request***' + endc)
+enter_two()
 
 
 #menu
@@ -476,7 +470,7 @@ def menu_code():
 	print ("")
 while True:
     print (yellow + "\nMenu Options\n" + endc)
-    print (white + " 1. Call Sunnyvale" + endc)
+    print (white + " 1. Find ProtoVision" + endc)
     print (white + " 2. DEFCON Status" + endc)
     print (white + " 3. View Statistics" + endc)
     print (white + " 4. List Games" + endc)
@@ -488,7 +482,7 @@ while True:
     if que == "1":
         sunny_vale() 
 
-    if que == "2":
+    elif que == "2":
         def_con()   
 
     elif que == "3":
@@ -507,7 +501,6 @@ while True:
         end_game()        
         break
 menu_code()
-
 
 
 if __name__ == "__main__":
