@@ -38,13 +38,10 @@ os.system('clear')
 attempts=0
 while attempts<3:
     password=input(white + '\nLOGON: ' + endc)
-    if password == ('Joshua'):
+    if password in ['Joshua', 'joshua']:
         print (white + '\nACCESS GRANTED' + endc)
         break
-    elif password == ('joshua'):
-        print (white + '\nACCESS GRANTED' + endc)
-        break
-    elif password == ('help'):
+    elif password == 'help':
         print (white + '\nHELP NOT AVAILABLE\n' + endc)
     else:
         print (white + "\nIDENTIFICATION NOT RECOGNIZED BY SYSTEM\n" + endc)
@@ -53,7 +50,7 @@ while attempts<3:
 def is_glitch(): 
     time.sleep (.4)
     os.system('clear')
-    print(white + '--------------------' + endc)
+    print(f'{white}--------------------{endc}')
     time.sleep (.3)
     os.system('clear')
     print(white + '\n--------------------' + endc)
@@ -62,7 +59,7 @@ def is_glitch():
     print(white + '\n\n--------------------' + endc)
     time.sleep (.1)
     os.system('clear')
-    print(white + '--------------------' + endc)
+    print(f'{white}--------------------{endc}')
     time.sleep (.1)
     os.system('clear')
 is_glitch()
@@ -248,7 +245,7 @@ def time_remain(timer):
     while timer:
         mins, secs = divmod(timer, 60)
         timeformat = '{:02d}'.format(secs)
-        print (white + "  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
+        print(f"{white}  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
         time.sleep(1)
         timer -= 1
 
@@ -469,14 +466,14 @@ def menu_code():
 	print ("")
 while True:
     print (yellow + "\nMenu Options\n" + endc)
-    print (white + " 1. Find ProtoVision" + endc)
-    print (white + " 2. DEFCON Status" + endc)
-    print (white + " 3. View Statistics" + endc)
-    print (white + " 4. List Games" + endc)
-    print (white + " 5. Get Launch Code" + endc)
-    print (white + " 6. Time Remaining" + endc)
+    print(f"{white} 1. Find ProtoVision{endc}")
+    print(f"{white} 2. DEFCON Status{endc}")
+    print(f"{white} 3. View Statistics{endc}")
+    print(f"{white} 4. List Games{endc}")
+    print(f"{white} 5. Get Launch Code{endc}")
+    print(f"{white} 6. Time Remaining{endc}")
     print (white + " 7. End Wargames\n" + endc)
-    que = input(yellow + "Enter a number: " + endc)
+    que = input(f"{yellow}Enter a number: {endc}")
 
     if que == "1":
         proto_vision() 

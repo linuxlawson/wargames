@@ -23,13 +23,15 @@ iscaps = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 isnums = list("1234567890")
 isspace = list(" ")
 
-attemptThis = ''.join(random.choice(iscaps + isnums + isspace) for i in range(len(target)))
+attemptThis = ''.join(
+    random.choice(iscaps + isnums + isspace) for _ in range(len(target))
+)
 attemptNext = ''
 
 completed = False
 generation = 0
 
-while completed == False:
+while not completed:
     print(' ',bold + white + attemptThis,'\033[F' + endc)
     attemptNext = ''
     completed = True
