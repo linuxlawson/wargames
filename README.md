@@ -10,11 +10,11 @@ This is an interactive program which allows you
 to communicate with WOPR (aka joshua). 
 
 **To use:**    
-Open Terminal.  
-Navigate to correct directory  
-Run program using:  
+1. Open Terminal.  
+2. Navigate to correct directory  
+3. Run program using:  
 `python3 joshua.py`    
-OR  
+or  
 `./joshua.py`    
 
 Below is a list of questions you can ask WOPR (joshua).     
