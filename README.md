@@ -15,15 +15,14 @@ to communicate with WOPR (aka joshua).
 3. Run program using:  
 `python3 joshua.py`    
 or  
-`./joshua.py`    
+`./joshua.py`
 
-Below is a list of questions you can ask WOPR (joshua).     
-Ask the listed questions in order and Joshua will respond.   
- 
 <br>
 
-**Questions for Joshua** (Begin after greeting):    
-
+After Greeting, ask the questions below in order   
+and the WOPR computer (aka Joshua) will respond.  
+ 
+<br>
 
 Hello, Joshua?
 
