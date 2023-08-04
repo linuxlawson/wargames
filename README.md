@@ -17,6 +17,8 @@ to communicate with WOPR (aka Joshua).
 or  
 `./joshua.py`
 
+password = joshua or Joshua  
+
 <br>
 
 After Greeting, ask the questions below in order   
