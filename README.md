@@ -7,7 +7,7 @@ Anyone familiar with the 1984 WarGames Movie knows this.
 
 
 This is an interactive program which allows you
-to communicate with WOPR (aka joshua). 
+to communicate with WOPR (aka Joshua). 
 
 **To use:**    
 1. Open Terminal.  
