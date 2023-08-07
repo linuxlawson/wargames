@@ -5,6 +5,13 @@ Wargames WOPR Computer Simulation
 WOPR is a War Operation Plan Response super computer.  
 Anyone familiar with the 1984 WarGames Movie knows this.  
 
+**In the movie:**  
+While attempting to hack into a computer game company.  
+David Lightman unknowingly hacks into a system which doesn't identify itself.  
+Assuming its the game company, he starts a game of Global Thermonuclear War.  
+It soon becomes obvious he has actually hacked into a military super-computer.    
+It also becomes obvious the WOPR has no intentions to stop playing  
+until the game has been won.  
 
 This is an interactive program which allows you
 to communicate with WOPR (aka Joshua). 
