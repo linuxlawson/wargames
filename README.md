@@ -47,7 +47,7 @@ People sometimes make mistaks
 
 What is the primary goal?  
 
-<br><br>
+<br>  
 
 **Note:** I only added so many questions because it would drag on to much.  
 Maybe I'll add more questions/answers someday. 
