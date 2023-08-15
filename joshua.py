@@ -461,7 +461,7 @@ for char in string:
 def view_stats():
     time.sleep (0.6)
     print ("")
-    string = (white + " UNITED STATES\n UNITS DESTROYED     MILITARY FORCES\n" 
+    string = (f"{white} UNITED STATES\n UNITS DESTROYED     MILITARY FORCES\n" 
                   "\n       68%           BOMBERS\n" 
                     "       54%           ICBM'S\n"
                     "       12%           ATTACK SUBS\n"
@@ -501,7 +501,7 @@ print ("")
 time.sleep (.5)
 
 #wopr
-string = (white + "WHATS THE DIFFERENCE?\n" + endc)
+string = (f"{white}WHATS THE DIFFERENCE?\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -509,7 +509,7 @@ for char in string:
 
 #wopr
 time.sleep (1)#here
-string = (white + "\nYOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS.\n\n\n" + endc)
+string = (f"{white}\nYOU ARE A HARD MAN TO REACH. COULD NOT FIND \nYOU IN SEATTLE AND NO TERMINAL IS IN \nOPERATION AT YOUR CLASSIFIED ADDRESS.\n\n\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -521,25 +521,25 @@ say = input('') #what classified address?
 time.sleep (.5)
 
 #wopr
-string = (white + "\nDOD PENSION FILES INDICATE \nCURRENT MAILING AS:\n\n" + endc)
+string = (f"{white}\nDOD PENSION FILES INDICATE \nCURRENT MAILING AS:\n\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.05)
 
-string = (white + " Dr. Robert Hume (aka Stephen W. Falken)\n" + endc)
+string = (f"{white} Dr. Robert Hume (aka Stephen W. Falken)\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
 
-string = (white + " 5 Tall Cedar Road\n" + endc)
+string = (f"{white} 5 Tall Cedar Road\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(.04)
 
-string = (white + " Goose Island, Oregon  97014\n\n\n" + endc)
+string = (f"{white} Goose Island, Oregon  97014\n\n\n{endc}")
 for char in string:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -593,7 +593,7 @@ def davids_grades():
     print (f"{white}\nPLEASE ENTER STUDENT NAME: Lightman, David L")
     print ("\n\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
     print (f"{bold} ____________________________________________________________________{endc}")
-    print (F"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
+    print (f"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
     print (" E-325     ENGLISH 11B           D       TURMAN        5         114")
     print (" H-221     WORLD HISTORY 11B     C       DWYER         2         108")
     print (" L-134     TRIG 2                B       DICKERSON     4         315")
