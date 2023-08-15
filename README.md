@@ -28,26 +28,44 @@ password = joshua or Joshua
 
 <br>
 
-After Greeting, ask the questions below in order   
+Conversation with Joshua is split into 3 parts.  
+After Greeting, ask the questions below (in order)     
 and the WOPR computer (aka Joshua) will respond.  
  
 <br>
 
+Questions for WOPR (aka Joshua)  
+
+All conversations begin with: "Greeting Professor Falken"  
+
+<br>
+
+**[Scene 1 - Conversation 1]:**  
+
 Hello, Joshua?
 
-What classified address?
+I am fine. How are you?
 
-Are you still playing the game?
+People sometimes make mistaks  
+
+<br>
+
+**[Scene 2 - Conversation 2]:**  
+
+Incorrect ID. I am not Falken. Falken is dead.
 
 What is the primary goal?
 
+What is the primary goal???
+
+<br>
+
+**[Scene 3 - Conversation 3]:**  
+
+Hello, are you still playing the game?
+
 Is this a game or is it real?
 
-People sometimes make mistaks
+What classified address?  
 
-What is the primary goal?  
-
-<br>  
-
-**Note:** I only added so many questions because it would drag on to much.  
-Maybe I'll add more questions/answers someday. 
+<br>
