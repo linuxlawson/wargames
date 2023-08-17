@@ -5,5 +5,6 @@ Password List
 ~~Public~~  
 ~~Handle~~  
 ~~Effort~~  
+~~Points~~  
 ~~Double~~   
 Pencil
