@@ -40,7 +40,7 @@ All conversations begin with: "Greeting Professor Falken"
 
 <br>
 
-**[Scene 1 - Conversation 1]:**  
+**[Scene 1 - Conversation 1]:** :clapper:  
 
 Hello, Joshua?
 
@@ -50,7 +50,7 @@ People sometimes make mistaks
 
 <br>
 
-**[Scene 2 - Conversation 2]:**  
+**[Scene 2 - Conversation 2]:** :clapper:    
 
 Incorrect ID. I am not Falken. Falken is dead.
 
@@ -60,7 +60,7 @@ What is the primary goal???
 
 <br>
 
-**[Scene 3 - Conversation 3]:**  
+**[Scene 3 - Conversation 3]:** :clapper:    
 
 Hello, are you still playing the game?
 
