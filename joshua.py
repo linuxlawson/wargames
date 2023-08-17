@@ -16,6 +16,7 @@ yellow ='\033[93m'
 bold = "\033[1m" 
 endc = '\033[m'
 
+
 os.system('clear')
 time.sleep(.5)
 
@@ -259,7 +260,7 @@ for char in string:
 
 
 #ques
-say = input('') #hello
+say = input('') #hello, joshua?
 print ("")
 time.sleep (.5)
 
@@ -317,11 +318,12 @@ wel_come()
 
 #menu item 6
 def time_remain(timer):
+    print ("")#here
     print (f"{white}\n\n ESTIMATED TIME REMAINING: \n{endc}")
     while timer:
         mins, secs = divmod(timer, 60)
         timeformat = '{:02d}'.format(secs)
-        print (white + "  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
+        print (f"{white}  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
         time.sleep(1)
         timer -= 1
 time_remain(6)
@@ -397,7 +399,7 @@ def launch_codes():
     generation = 0
 
     while not completed:
-        print(' ', bold + white + attemptThis, end='\r' + endc)
+        print(f"{' '}{bold}{white}{attemptThis}", end='\r' + endc)
         attemptNext = ''
         completed = True
         for i in range(len(target)):
@@ -547,7 +549,7 @@ for char in string:
 convo_three()
 
 
-#menu item 7
+#menu item 8
 def end_game():
     os.system('clear')
     time.sleep (1)
@@ -616,7 +618,7 @@ def jenns_grades():
     print (f"{white} G-322     PHYSICAL EDUCATION    C       COMSTOCK      6         GYM{endc}")
     print ("\n")
 
-
+#menu item 7
 def data_net():
     print ("")
     os.system('clear')
@@ -626,7 +628,9 @@ def data_net():
     attempts=0
     while attempts<3:
         aname = input(f"{white}\nPLEASE LOGON WITH USER PASSWORD: {endc}")
-        if aname == ('pencil'):
+        if aname in ['Pencil', 'pencil']:
+            print (f"{white}\nPASSWORD VERIFIED\n{endc}")
+            time.sleep(1)
             break
         elif aname in ['Help', 'help']:
             print (f"{white}\nHELP NOT AVAILABLE\n{endc}")
