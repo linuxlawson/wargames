@@ -1,8 +1,9 @@
+SEATTLE PUBLIC SCHOOL DISTRICT DATANET
+
 Password List  
 
-
-~~marker~~  
-~~converse~~  
-~~jacket~~  
-~~icecream~~  
-pencil
+~~Public~~  
+~~Handle~~  
+~~Effort~~  
+~~Double~~   
+Pencil
