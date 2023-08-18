@@ -17,15 +17,13 @@ bold = "\033[1m"
 endc = '\033[m'
 
 
-os.system('clear')
-time.sleep(.5)
-
 def main():
     print("")
 
 #menu item 1
 def proto_vision():
     os.system('clear')
+    time.sleep(.5)
     print (f"{white}\nSCAN FOR CARRIER TONES IN SUNNYVALE, CA{endc}")
     time.sleep (.5)
     print (f"{white}\nSEARCHING FOR PROTOVISION\n{endc}")
@@ -48,15 +46,15 @@ def carrier_tones():
     os.system('clear')
 while True:
     print (f"{white}\nNUMBERS FOR WHICH CARRIER TONES WERE DETECTED:\n\n{endc}")
-    print (f"{white} 1. (311) 399 2364{endc}")
-    print (f"{white} 2. (311) 399 3582{endc}")
-    print (f"{white} 3. (311) 437 8739{endc}")
-    print (f"{white} 4. (311) 437 1083 <== ########{endc}")
-    print (f"{white} 5. (311) 437 2977{endc}")
-    print (f"{white} 6. (311) 767 7305{endc}")
-    print (f"{white} 7. (311) 767 3395{endc}")
-    print (f"{white} 8. (311) 936 1493{endc}")
-    print (f"{white} 9. (311) 936 3923\n\n\n\n{endc}")
+    print (f"{white} 1. (311) 399-2364{endc}")
+    print (f"{white} 2. (311) 399-3582{endc}")
+    print (f"{white} 3. (311) 437-8739{endc}")
+    print (f"{white} 4. (311) 437-1083 <== ########{endc}")
+    print (f"{white} 5. (311) 437-2977{endc}")
+    print (f"{white} 6. (311) 767-7305{endc}")
+    print (f"{white} 7. (311) 767-3395{endc}")
+    print (f"{white} 8. (311) 936-1493{endc}")
+    print (f"{white} 9. (311) 936-3923\n\n\n\n{endc}")
     que = input(f"{white}Please select number and then [ENTER] to start dialing. {endc}")
 
     if que == "4":
@@ -185,7 +183,7 @@ print (f"{yellow}\nTry 'help' or 'help games'\n{endc}")
 
 attempts=0
 while attempts<3:
-    uname = input(white + "LOGON: " + endc)
+    uname = input(f"{white}LOGON: {endc}")
     if uname == ('help games'):
         games_desc()
         break
@@ -260,7 +258,7 @@ for char in string:
 
 
 #ques
-say = input('') #hello, joshua?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -273,7 +271,7 @@ for char in string:
 
 
 #ques
-say = input('') #I am fine, how are you?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -285,7 +283,7 @@ for char in string:
     time.sleep(.05)
 
 #ques
-say = input('') #people sometimes make mistaks?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -326,7 +324,7 @@ def time_remain(timer):
         print (f"{white}  14 HRS  28 MIN ", timeformat, 'SEC', end='\r' + endc)
         time.sleep(1)
         timer -= 1
-time_remain(6)
+time_remain(5)
 
 
 #conversation II
@@ -341,7 +339,7 @@ for char in string:
 
 
 #ques
-say = input('') #im not falken, falken is dead
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -354,7 +352,7 @@ for char in string:
 
 
 #ques
-say = input('') #what is the primary goal?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -367,7 +365,7 @@ for char in string:
 
 
 #ques
-say = input('') #what is the primary goal?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -381,7 +379,7 @@ convo_two()
 
 
 def launch_codes():
-    print ("")
+    #print ("")
     os.system('clear')
     print ("")
     time.sleep (0.5)
@@ -442,7 +440,7 @@ for char in string:
 
 
 #ques
-say = input('') #hello, are you still playing the game?
+say = input('')
 time.sleep (.5)
 
 #wopr
@@ -498,7 +496,7 @@ view_stats()
 
 
 #ques
-say = input('') #is this a game or is it real?
+say = input('')
 print ("")
 time.sleep (.5)
 
@@ -519,7 +517,7 @@ for char in string:
 
 
 #ques
-say = input('') #what classified address?
+say = input('')
 time.sleep (.5)
 
 #wopr
@@ -572,7 +570,7 @@ def end_game():
         time.sleep(.08)
 
     time.sleep (.8)
-    print (" \n--CONNECTION TERMINATED-- \n" + endc)
+    print (f"{white} \n--CONNECTION TERMINATED-- \n{endc}")
     time.sleep (0.5)
 
 
@@ -585,8 +583,7 @@ def def_con():
     print (" $$     $$ $$$$$   $$$$$   $$      $$  $$  $$ $ $$      $$$$$")
     print (" $$    $$  $$      $$      $$      $$  $$  $$  $$$          $$")
     print (" $$$$$$$   $$$$$$  $$      $$$$$$  $$$$$$  $$   $$     $$$$$$$")
-    print (f"{endc}\n\n")
-
+    print (f"{endc}\n\n\n")
 
 
 def davids_grades():
@@ -594,7 +591,7 @@ def davids_grades():
     os.system('clear')
     print (f"{white}\nPLEASE ENTER STUDENT NAME: Lightman, David L")
     print ("\n\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
-    print (f"{bold} ____________________________________________________________________{endc}")
+    print (" ____________________________________________________________________")
     print (f"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
     print (" E-325     ENGLISH 11B           D       TURMAN        5         114")
     print (" H-221     WORLD HISTORY 11B     C       DWYER         2         108")
@@ -609,7 +606,7 @@ def jenns_grades():
     os.system('clear')
     print (f"{white}\nPLEASE ENTER STUDENT NAME: Mack, Jennifer K")
     print ("\n\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
-    print (f"{bold} ____________________________________________________________________{endc}")
+    print (" ____________________________________________________________________")
     print (f"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
     print (" E-325     ENGLISH 11B           A       ROBINSON      1         114")
     print (" H-221     WORLD HISTORY 11B     B       DWYER         2         108")
@@ -654,7 +651,6 @@ def data_net():
             print (f"{white}\n** IMPROPER REQUEST **\n{endc}")
 
 
-
 #menu
 def menu_code():
 	print ("")
@@ -673,26 +669,19 @@ while True:
 
     if que == "1":
         proto_vision() 
-
     elif que == "2":
         def_con()
-
     elif que == "3":
         os.system('clear')
         view_stats()
-
     elif que == "4":
         game_list()
-
     elif que == "5":
         launch_codes()
-
     elif que == "6":
         time_remain(5)
-
     elif que == "7":
         data_net()        
-        
     elif que == "8":
         end_game()        
         break
