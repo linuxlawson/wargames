@@ -56,7 +56,6 @@ while True:
     print (f"{white} 8. (311) 936-1493{endc}")
     print (f"{white} 9. (311) 936-3923\n\n\n\n{endc}")
     que = input(f"{white}Please select number and then [ENTER] to start dialing. {endc}")
-
     if que == "4":
         break
     else:   
@@ -418,8 +417,10 @@ def launch_codes():
     print ("\n  Launch missles in T-minus "f"{generation} second(s)\n")
     time.sleep (0.5)
     print(f"{white}\n  -------------------------{endc}")
+    time.sleep (0.2)    
+    print(f"{red}\tCPE 1704 TKS{endc}")
     time.sleep (0.2)
-    print(f"{white}\n  -------------------------{endc}")
+    print(f"{white}  -------------------------{endc}")
     time.sleep (0.2)
     print ("\n  Turn your key, sir. \n")
     time.sleep (1)
@@ -597,7 +598,6 @@ def davids_grades():
     print (" L-134     TRIG 2                B       DICKERSON     4         315")
     print (" G-212     LUNCH                 -       NONE          5         CAF")
     print (f"{white} G-322     PHYSICAL EDUCATION    B       COMSTOCK      6         GYM{endc}")
-    #print ("")
 
 
 def jenns_grades():
@@ -612,7 +612,7 @@ def jenns_grades():
     print (" L-134     HOME ECONOMICS        D       MARKS         4         311")
     print (" G-212     GEOMETRY              C       JENKINS       5         116")
     print (f"{white} G-322     PHYSICAL EDUCATION    C       COMSTOCK      6         GYM{endc}")
-    #print ("")
+
 
 #menu item 7
 def data_net():
@@ -633,7 +633,6 @@ def data_net():
         else:
             print (f"{white}\n** IMPROPER REQUEST **\n{endc}")
 
-
     os.system('clear')
     attempts=0
     while attempts<3:
@@ -648,7 +647,6 @@ def data_net():
             print (f"{white}\nHELP NOT AVAILABLE\n{endc}")
         else:
             print (f"{white}\n** IMPROPER REQUEST **\n{endc}")
-
 
 #menu
 def menu_code():
