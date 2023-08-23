@@ -379,10 +379,9 @@ convo_two()
 
 
 def launch_codes():
-    #print ("")
     os.system('clear')
-    print ("")
     time.sleep (0.5)
+    print ("")
 
     target = ("CPE 1704 TKS")
     iscaps = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -397,7 +396,7 @@ def launch_codes():
     generation = 0
 
     while not completed:
-        print(f"{' '}{bold}{white}{attemptThis}", end='\r' + endc)
+        print(f"{' '}{bold}{white}{attemptThis}{endc}", end='\r')
         attemptNext = ''
         completed = True
         for i in range(len(target)):
@@ -589,8 +588,8 @@ def def_con():
 def davids_grades():
     time.sleep (.5)
     os.system('clear')
-    print (f"{white}\nPLEASE ENTER STUDENT NAME: Lightman, David L")
-    print ("\n\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
+    print (f"{white}PLEASE ENTER STUDENT NAME: Lightman, David L")
+    print ("\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
     print (" ____________________________________________________________________")
     print (f"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
     print (" E-325     ENGLISH 11B           D       TURMAN        5         114")
@@ -598,14 +597,14 @@ def davids_grades():
     print (" L-134     TRIG 2                B       DICKERSON     4         315")
     print (" G-212     LUNCH                 -       NONE          5         CAF")
     print (f"{white} G-322     PHYSICAL EDUCATION    B       COMSTOCK      6         GYM{endc}")
-    print ("\n")
+    #print ("")
 
 
 def jenns_grades():
     time.sleep (.5)
     os.system('clear')
-    print (f"{white}\nPLEASE ENTER STUDENT NAME: Mack, Jennifer K")
-    print ("\n\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
+    print (f"{white}PLEASE ENTER STUDENT NAME: Mack, Jennifer K")
+    print ("\n CLASS #   COURSE TITLE        GRADE     TEACHER     PERIOD      ROOM")
     print (" ____________________________________________________________________")
     print (f"{white}\n S-202     BIOLOGY 2             F       LIGGET        3         214")
     print (" E-325     ENGLISH 11B           A       ROBINSON      1         114")
@@ -613,7 +612,7 @@ def jenns_grades():
     print (" L-134     HOME ECONOMICS        D       MARKS         4         311")
     print (" G-212     GEOMETRY              C       JENKINS       5         116")
     print (f"{white} G-322     PHYSICAL EDUCATION    C       COMSTOCK      6         GYM{endc}")
-    print ("\n")
+    #print ("")
 
 #menu item 7
 def data_net():
@@ -638,7 +637,7 @@ def data_net():
     os.system('clear')
     attempts=0
     while attempts<3:
-        aname = input(f"{white}\nPLEASE ENTER STUDENT NAME: {endc}")
+        aname = input(f"{white}PLEASE ENTER STUDENT NAME: {endc}")
         if aname in ['Lightman, David L', 'David Lightman', 'Lightman', 'David']:
             davids_grades()
             break    
